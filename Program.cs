@@ -18,7 +18,7 @@ switch (operation){
         Console.WriteLine("Invalid operation");
         break;
 }
-
+// Source: https://code-maze.com/csharp-writing-csv-file/
 void makeCheep(string message)
 {
     long unixTimestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
@@ -29,10 +29,9 @@ void makeCheep(string message)
     {
         csv.WriteRecord(newCheep);
         csv.NextRecord();
-
     }
 }
-
+// Source: https://code-maze.com/csharp-read-data-from-csv-file/
  void readCheeps()
  {
      using (StreamReader sr = new StreamReader(cheepDatabasePath))
