@@ -53,19 +53,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Xander\\.nuget\\packages\\": {}
+    "C:\\Users\\Bianc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xander\\RiderProjects\\Chirp\\Chirp.CLI.csproj",
+      "projectUniqueName": "C:\\Users\\Bianc\\Documents\\BDSA\\Chirp\\Chirp.CLI.Client\\Chirp.CLI.csproj",
       "projectName": "Chirp.CLI",
-      "projectPath": "C:\\Users\\Xander\\RiderProjects\\Chirp\\Chirp.CLI.csproj",
-      "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xander\\RiderProjects\\Chirp\\obj\\",
+      "projectPath": "C:\\Users\\Bianc\\Documents\\BDSA\\Chirp\\Chirp.CLI.Client\\Chirp.CLI.csproj",
+      "packagesPath": "C:\\Users\\Bianc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bianc\\Documents\\BDSA\\Chirp\\Chirp.CLI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Bianc\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
