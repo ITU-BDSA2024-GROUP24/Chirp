@@ -36,10 +36,6 @@ void makeCheep(string message)
      using (StreamReader sr = new StreamReader(cheepDatabasePath))
      using (var csv = new CsvReader(sr, CultureInfo.InvariantCulture))
      {
-         var cheeps = csv.GetRecords<Cheep>();
-         foreach (var cheep in cheeps)
-         {
-             Console.WriteLine(cheep);
-         }
+         void PrintCheeps()
      }
  }
