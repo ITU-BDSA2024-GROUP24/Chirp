@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc70744-f5e4-416b-82cc-1174d0e5f4be" name="Changes" comment="Added the SimpleDB Project and created the IDatabaseRepository interface">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/UserInterface.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +75,7 @@
       <workItem from="1725366545961" duration="1615000" />
       <workItem from="1725368215408" duration="1372000" />
       <workItem from="1725437841998" duration="7834000" />
-      <workItem from="1725454279714" duration="300000" />
+      <workItem from="1725454279714" duration="1325000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
