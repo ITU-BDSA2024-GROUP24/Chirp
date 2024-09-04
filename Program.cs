@@ -23,8 +23,7 @@ void makeCheep(string message)
 {
     long unixTimestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
     var newCheep = new Cheep {Author = Environment.UserName, Message = message, Timestamp = unixTimestamp};
-    using (var stream = File.Open(cheepDatabasePath, FileMode.Append))
-    using (StreamWriter sw = new StreamWriter(stream))
+    using (StreamWriter sw = new StreamWriter(cheepDatabasePath, append: true))
     using (var csv = new CsvWriter(sw, CultureInfo.InvariantCulture))
     {
         csv.WriteRecord(newCheep);
