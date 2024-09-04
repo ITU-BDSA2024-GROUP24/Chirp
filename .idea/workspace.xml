@@ -4,49 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cc70744-f5e4-416b-82cc-1174d0e5f4be" name="Changes" comment="Added the SimpleDB Project and created the IDatabaseRepository interface">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cheep.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Folder.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Chirp.CLI.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Chirp.CLI.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/Chirp.CLI.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/CsvHelper.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/chirp_cli_db.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Chirp.CLI.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Chirp.CLI.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Chirp.CLI.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.csproj.Up2Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/Chirp.CLI.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/apphost.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/Chirp.CLI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/Chirp.CLI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" />
+    <list default="true" id="2cc70744-f5e4-416b-82cc-1174d0e5f4be" name="Changes" comment="Separated SimpleDB project from Chirp.CLI.Client">
+      <change afterPath="$PROJECT_DIR$/SimpleDB/CSVDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleDB/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleDB/IDatabaseRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleDB/IDatabaseRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +39,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Chirp.CLI.Client/Cheep.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/SimpleDB/Class1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SimpleDB/IDatabaseRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -88,18 +52,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "2.b-RefactorToSimpleDB",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,7 +76,7 @@
       <workItem from="1725268580865" duration="5591000" />
       <workItem from="1725366545961" duration="1615000" />
       <workItem from="1725368215408" duration="1372000" />
-      <workItem from="1725437841998" duration="7834000" />
+      <workItem from="1725437841998" duration="10339000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />
@@ -138,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725451096606</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Separated SimpleDB project from Chirp.CLI.Client">
+      <option name="closed" value="true" />
+      <created>1725453538917</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1725453538917</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +147,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Added sources for reading and writing to .csv files.&#10;Co-authored-by: Bianca &lt;biso@itu.dk&gt;&#10;Co-authored-by: Frederik &lt;fbor@itu.dk&gt;&#10;Co-authored-by: Alex &lt;alju@itu.dk&gt;&#10;Co-authored-by: Caroline &lt;cslj@itu.dk&gt;" />
     <MESSAGE value="Added the SimpleDB Project and created the IDatabaseRepository interface" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the SimpleDB Project and created the IDatabaseRepository interface" />
+    <MESSAGE value="Separated SimpleDB project from Chirp.CLI.Client" />
+    <option name="LAST_COMMIT_MESSAGE" value="Separated SimpleDB project from Chirp.CLI.Client" />
   </component>
 </project>

@@ -31,7 +31,8 @@ void makeCheep(string message)
     }
 }
 // Source: https://code-maze.com/csharp-read-data-from-csv-file/
- void readCheeps()
+
+void readCheeps()
  {
      using (StreamReader sr = new StreamReader(cheepDatabasePath))
      using (var csv = new CsvReader(sr, CultureInfo.InvariantCulture))
