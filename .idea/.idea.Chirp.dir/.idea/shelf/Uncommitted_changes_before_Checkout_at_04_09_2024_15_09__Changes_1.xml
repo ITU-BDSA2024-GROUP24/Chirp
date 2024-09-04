@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1" date="1725455383348" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 04/09/2024 15.09 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" />
+    <option name="AFTER_PATH" value="Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/Chirp.CLI.csproj.AssemblyReference.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Chirp.CLI.Client/obj/project.nuget.cache" />
+    <option name="AFTER_PATH" value="Chirp.CLI.Client/obj/project.nuget.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/project.nuget.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" />
+    <option name="AFTER_PATH" value="Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/Chirp.CLI.AssemblyInfoInputs.cache" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.assets.cache" />
+    <option name="AFTER_PATH" value="Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.assets.cache" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/Chirp.CLI.assets.cache" />
+  </binary>
+</changelist>
