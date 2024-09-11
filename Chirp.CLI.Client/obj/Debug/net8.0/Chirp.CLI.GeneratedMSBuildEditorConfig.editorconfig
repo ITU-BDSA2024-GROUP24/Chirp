@@ -1,4 +1,7 @@
 is_global = true
+build_property.RootNamespace = Chirp.CLI
+build_property.RootNamespace = Chirp.CLI
+build_property.DebugDocoptNet = 
 build_property.TargetFramework = net8.0
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = 
@@ -7,7 +10,6 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Chirp.CLI
-build_property.ProjectDir = C:\Users\Bianc\Documents\BDSA\Chirp\Chirp.CLI.Client\
+build_property.ProjectDir = C:\Users\frede\OneDrive\Skrivebord\Analyse, design og softwarearkitektur\Chirp\Chirp.CLI.Client\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
