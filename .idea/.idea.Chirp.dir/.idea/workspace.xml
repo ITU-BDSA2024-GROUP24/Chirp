@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/Chirp.CLI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/Chirp.CLI.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/data/chirp_cli_db.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/data/chirp_cli_db.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.g.targets" afterDir="false" />
@@ -61,7 +63,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Docopt.net-refactoring",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -140,5 +142,9 @@
   <component name="VcsManagerConfiguration">
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

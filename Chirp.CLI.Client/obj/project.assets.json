@@ -158,19 +158,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\frede\\.nuget\\packages\\": {}
+    "C:\\Users\\Xander\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.CLI.Client\\Chirp.CLI.csproj",
+      "projectUniqueName": "C:\\Users\\Xander\\RiderProjects\\Chirp\\Chirp.CLI.Client\\Chirp.CLI.csproj",
       "projectName": "Chirp.CLI",
-      "projectPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.CLI.Client\\Chirp.CLI.csproj",
-      "packagesPath": "C:\\Users\\frede\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.CLI.Client\\obj\\",
+      "projectPath": "C:\\Users\\Xander\\RiderProjects\\Chirp\\Chirp.CLI.Client\\Chirp.CLI.csproj",
+      "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Xander\\RiderProjects\\Chirp\\Chirp.CLI.Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\frede\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -182,8 +182,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\SimpleDB\\SimpleDB.csproj": {
-              "projectPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\SimpleDB\\SimpleDB.csproj"
+            "C:\\Users\\Xander\\RiderProjects\\Chirp\\SimpleDB\\SimpleDB.csproj": {
+              "projectPath": "C:\\Users\\Xander\\RiderProjects\\Chirp\\SimpleDB\\SimpleDB.csproj"
             }
           }
         }
