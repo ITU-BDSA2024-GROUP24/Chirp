@@ -1,22 +1,24 @@
-name: Label_issues
+name: Label issues
 on:
   issues:
     types:
       - reopened
       - opened
-      - assigned
+
 jobs:
   label_issues:
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
-       - run: |
-            gh issue edit "$NUMBER" --add-label "$LABEL1" --add-label "$LABEL2" --add-label "$LABEL3"
-            env:
-            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            GH_REPO: ${{ github.repository }}
-            NUMBER: ${{ github.event.issue.number }}
-            LABEL1: "good first issue"
-            LABEL2: "Test"
-            LABEL3: "Testing"
+      - name: Set up GitHub CLI
+        run: |
+          gh auth setup-git
+          gh auth status
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add label to issue
+        run: gh issue edit ${{ github.event.issue.number }} --add-label triage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc70744-f5e4-416b-82cc-1174d0e5f4be" name="Changes" comment="Added the SimpleDB Project and created the IDatabaseRepository interface">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/Label_issues.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Label_issues.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
