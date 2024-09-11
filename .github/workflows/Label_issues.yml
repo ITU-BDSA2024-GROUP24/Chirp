@@ -11,9 +11,12 @@ jobs:
     permissions:
       issues: write
     steps:
-      - run: gh issue edit "$NUMBER" --add-label "$LABELS"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-          NUMBER: ${{ github.event.issue.number }}
-          LABELS: good first issue,Test,Testing
+       - run: |
+            gh issue edit "$NUMBER" --add-label "$LABEL1" --add-label "$LABEL2" --add-label "$LABEL3"
+            env:
+            GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            GH_REPO: ${{ github.repository }}
+            NUMBER: ${{ github.event.issue.number }}
+            LABEL1: "good first issue"
+            LABEL2: "Test"
+            LABEL3: "Testing"
