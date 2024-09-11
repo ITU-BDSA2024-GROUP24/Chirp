@@ -16,4 +16,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          LABELS: good first issue, Test, Testing
+          LABELS: good first issue,Test,Testing
