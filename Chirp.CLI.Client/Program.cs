@@ -33,17 +33,6 @@ else
     Console.WriteLine("Invalid operation");
 }
 
-/*
-switch (arguments["<message>"].ToString())
-{
-    case "read":
-        var cheeps = db.Read();
-        UserInterface.printCheeps(cheeps);
-        break;
-    case "cheep":
-        break;
-}
-*/
 Cheep makeCheep(string message)
 {
     var unixTimestamp = ((DateTimeOffset)DateTime.Now).ToUnixTimeSeconds();
