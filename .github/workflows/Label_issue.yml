@@ -6,14 +6,15 @@ on:
       - opened
       - assigned
       - unassigned
-
 jobs:
   label_issues:
     runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
-      - name: Label the issue
-        run: gh issue edit ${{ github.event.issue.number }} --add-label "triage,good first issue,Test,bug,documentation,help wanted,invalid"
+      - run: gh issue edit "$NUMBER" --add-label "$LABELS"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          LABELS: good first issue,bug,duplicate,help wanted,wontfix
