@@ -27,7 +27,6 @@ jobs:
 
           # Pack files
           tar czvf "${release_name}.tar.gz" "$release_name"
-          fi
 
           # Delete output directory
           rm -r "$release_name"
