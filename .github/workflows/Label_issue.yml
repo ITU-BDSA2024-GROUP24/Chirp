@@ -12,9 +12,9 @@ jobs:
     permissions:
       issues: write
     steps:
-      - run: gh issue edit "$NUMBER" --add-label "$LABELS"
+      - run: gh issue edit "$NUMBER" --add-label "$TRIGGERED_LABELS"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          LABELS: good first issue,bug,duplicate,help wanted,wontfix
+          TRIGGERED_LABELS: ${{ github.event.label.name }}
