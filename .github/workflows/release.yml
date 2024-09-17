@@ -15,7 +15,7 @@ jobs:
       - name: Setup dotnet
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: 8.0.x
+          dotnet-version: 3.1.101
       - name: Build
         shell: bash
         run: |
@@ -23,7 +23,7 @@ jobs:
           release_name="Chirp-$tag-linux-x64"
 
           # Build everything
-          dotnet publish src/Chirp.CLI.Client/Chirp.CLI.csproj --framework net8.0 --runtime "linux-x64" -c Release -o "$release_name"
+          dotnet publish src/Chirp.CLI.Client/Chirp.CLI.csproj --framework netcoreapp3.1 --runtime "linux-x64" -c Release -o "$release_name"
 
           # Pack files
           tar czvf "${release_name}.tar.gz" "$release_name"
