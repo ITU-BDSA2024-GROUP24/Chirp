@@ -98,3 +98,13 @@ C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Ch
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\obj\Debug\net8.0\Chirp.CLI.Clint.Tests.pdb
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\obj\Debug\net8.0\Chirp.CLI.Clint.Tests.genruntimeconfig.cache
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\obj\Debug\net8.0\ref\Chirp.CLI.Clint.Tests.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_Chirp.CLI.Clint.Tests
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\Chirp.CLI.deps.json
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\Chirp.CLI.runtimeconfig.json
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\Chirp.CLI.exe
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\CsvHelper.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\DocoptNet.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\Chirp.CLI.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\SimpleDB.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\Chirp.CLI.pdb
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests\bin\Debug\net8.0\SimpleDB.pdb
