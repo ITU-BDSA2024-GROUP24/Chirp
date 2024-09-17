@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: alex-page/github-project-automation-plus@7ffb872c64bd809d23563a130a0a97d01dfa8f43
         with:
-          project: ITU-BDSA2024-GROUP24 Chirp
-          column: In progress
+          project: "ITU-BDSA2024-GROUP24 Chirp"
+          column: "In progress"
           repo-token: ${{ secrets.SECRET_TOKEN }}
   
