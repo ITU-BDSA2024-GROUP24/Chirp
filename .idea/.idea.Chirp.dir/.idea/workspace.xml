@@ -8,20 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24de1325-7e00-431a-91f4-9241ff7cfa3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/Chirp.CLI.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/Chirp.CLI.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/Chirp.CLI.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09__Changes_1.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/data/chirp_cli_db.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/chirp_cli_db.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chirp.CLI.Client/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Chirp.CLI.Client/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/CSVDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/CSVDatabase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +31,19 @@
     &quot;assignee&quot;: &quot;Xamyg&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/ITU-BDSA2024-GROUP24/Chirp&quot;,
-    &quot;accountId&quot;: &quot;87ec7dbe-a645-4a21-9e0e-1e911a3bdb48&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ITU-BDSA2024-GROUP24/Chirp.git",
+    "accountId": "a4fe4a4d-7bba-4ba8-a47b-8cc23af8778b"
   }
-}</component>
+}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Chirp.CLI.Client/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/SimpleDB/CSVDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -60,22 +53,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;rider.code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.Chirp.CLI.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "rider.code.cleanup.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="QodanaHighlightedReportService">
+    <option name="localRunNotPublishedPersistedInfo">
+      <LocalReportPersistedInfo>
+        <option name="path" value="C:\Users\Bianc\AppData\Local\Temp\qodana_output\qodana.sarif.json" />
+        <option name="reportGuid" value="6021789c-d1e0-4c95-b358-bd20ed82ae84" />
+        <option name="reportName" value="Chirp/qodana/2024-09-17" />
+      </LocalReportPersistedInfo>
+    </option>
+  </component>
+  <component name="QodanaIsSelectedPersistenceService">
+    <option name="selectedOrLoading" value="true" />
+  </component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="C:\Users\Bianc\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="6021789c-d1e0-4c95-b358-bd20ed82ae84" reportId="Chirp/qodana/2024-09-17" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Chirp.CLI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -89,7 +100,7 @@
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
       <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
-      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_KIND" value="Unloaded" />
       <option name="PROJECT_TFM" value="" />
       <method v="2">
         <option name="Build" />
@@ -111,6 +122,7 @@
       <workItem from="1726052747768" duration="2664000" />
       <workItem from="1726425681365" duration="637000" />
       <workItem from="1726427785265" duration="54000" />
+      <workItem from="1726591038253" duration="3543000" />
     </task>
     <servers />
   </component>
