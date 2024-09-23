@@ -5673,19 +5673,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexj\\.nuget\\packages\\": {}
+    "C:\\Users\\Xander\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\test\\Chirp.CLI.Clint.Tests\\Chirp.CLI.Clint.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Xander\\Desktop\\NET Projects\\Chirp\\test\\Chirp.CLI.Clint.Tests\\Chirp.CLI.Clint.Tests.csproj",
       "projectName": "Chirp.CLI.Clint.Tests",
-      "projectPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\test\\Chirp.CLI.Clint.Tests\\Chirp.CLI.Clint.Tests.csproj",
-      "packagesPath": "C:\\Users\\alexj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\test\\Chirp.CLI.Clint.Tests\\obj\\",
+      "projectPath": "C:\\Users\\Xander\\Desktop\\NET Projects\\Chirp\\test\\Chirp.CLI.Clint.Tests\\Chirp.CLI.Clint.Tests.csproj",
+      "packagesPath": "C:\\Users\\Xander\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Xander\\Desktop\\NET Projects\\Chirp\\test\\Chirp.CLI.Clint.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alexj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Xander\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -5697,8 +5697,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\src\\Chirp.CLI.Client\\Chirp.CLI.csproj": {
-              "projectPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\src\\Chirp.CLI.Client\\Chirp.CLI.csproj"
+            "C:\\Users\\Xander\\Desktop\\NET Projects\\Chirp\\src\\Chirp.CLI.Client\\Chirp.CLI.csproj": {
+              "projectPath": "C:\\Users\\Xander\\Desktop\\NET Projects\\Chirp\\src\\Chirp.CLI.Client\\Chirp.CLI.csproj"
             }
           }
         }
