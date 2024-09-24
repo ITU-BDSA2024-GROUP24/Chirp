@@ -24,3 +24,16 @@ C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Ch
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\src\SimpleDB\obj\Debug\net8.0\refint\SimpleDB.dll
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.pdb
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\src\SimpleDB\obj\Debug\net8.0\ref\SimpleDB.dll
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\bin\Debug\net8.0\SimpleDB.deps.json
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\bin\Debug\net8.0\SimpleDB.dll
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\bin\Debug\net8.0\SimpleDB.pdb
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.csproj.AssemblyReference.cache
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.AssemblyInfoInputs.cache
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.AssemblyInfo.cs
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.csproj.CoreCompileInputs.cache
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.sourcelink.json
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.dll
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\refint\SimpleDB.dll
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\SimpleDB.pdb
+C:\Users\Xander\Desktop\NET Projects\Chirp\src\SimpleDB\obj\Debug\net8.0\ref\SimpleDB.dll
