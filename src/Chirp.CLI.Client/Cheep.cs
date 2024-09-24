@@ -1,6 +1,6 @@
 ﻿namespace Chirp.CLI;
 
-public class Cheep
+public record Cheep
 {
     public required string Author { get; set; }
     public required string Message { get; set; }
