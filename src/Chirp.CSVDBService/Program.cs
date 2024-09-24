@@ -11,7 +11,7 @@ string recordDatabasePath = "..\\..\\data\\chirp_cli_db.csv";
 
 app.MapGet("/cheeps", () => Read());
 
-app.MapPut("/cheep", (Cheep cheep) => Store(cheep));
+app.MapPost("/cheep", (Cheep cheep) => Store(cheep));
 
 
 app.Run();

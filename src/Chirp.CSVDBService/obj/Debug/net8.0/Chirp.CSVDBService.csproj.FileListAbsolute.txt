@@ -35,3 +35,40 @@ C:\Users\Xander\Desktop\NET Projects\Chirp\src\Chirp.CSVDBService\obj\Debug\net8
 C:\Users\Xander\Desktop\NET Projects\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.pdb
 C:\Users\Xander\Desktop\NET Projects\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.genruntimeconfig.cache
 C:\Users\Xander\Desktop\NET Projects\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\ref\Chirp.CSVDBService.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\appsettings.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CLI.deps.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CLI.runtimeconfig.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CLI.exe
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CSVDBService.exe
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CSVDBService.deps.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CSVDBService.runtimeconfig.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CSVDBService.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CSVDBService.pdb
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\CsvHelper.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\DocoptNet.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CLI.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\SimpleDB.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\Chirp.CLI.pdb
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\bin\Debug\net8.0\SimpleDB.pdb
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.csproj.AssemblyReference.cache
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.AssemblyInfoInputs.cache
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.AssemblyInfo.cs
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.csproj.CoreCompileInputs.cache
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.sourcelink.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets\msbuild.Chirp.CSVDBService.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets\msbuild.build.Chirp.CSVDBService.props
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Chirp.CSVDBService.props
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Chirp.CSVDBService.props
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\scopedcss\bundle\Chirp.CSVDBService.styles.css
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CS.5911E781.Up2Date
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\refint\Chirp.CSVDBService.dll
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.pdb
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\Chirp.CSVDBService.genruntimeconfig.cache
+C:\Users\Bianc\Documents\BDSA\Chirp\src\Chirp.CSVDBService\obj\Debug\net8.0\ref\Chirp.CSVDBService.dll
