@@ -5568,19 +5568,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alexj\\.nuget\\packages\\": {}
+    "C:\\Users\\frede\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\test\\SimpleDB.Tests\\SimpleDB.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\test\\SimpleDB.Tests\\SimpleDB.Tests.csproj",
       "projectName": "SimpleDB.Tests",
-      "projectPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\test\\SimpleDB.Tests\\SimpleDB.Tests.csproj",
-      "packagesPath": "C:\\Users\\alexj\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\test\\SimpleDB.Tests\\obj\\",
+      "projectPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\test\\SimpleDB.Tests\\SimpleDB.Tests.csproj",
+      "packagesPath": "C:\\Users\\frede\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\test\\SimpleDB.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alexj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\frede\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -5592,8 +5592,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\src\\SimpleDB\\SimpleDB.csproj": {
-              "projectPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\src\\SimpleDB\\SimpleDB.csproj"
+            "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\src\\SimpleDB\\SimpleDB.csproj": {
+              "projectPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\src\\SimpleDB\\SimpleDB.csproj"
             }
           }
         }
