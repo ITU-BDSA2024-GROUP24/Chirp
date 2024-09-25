@@ -98,3 +98,7 @@ C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Ch
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\obj\Debug\net8.0\SimpleDB.Tests.pdb
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\obj\Debug\net8.0\SimpleDB.Tests.genruntimeconfig.cache
 C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\obj\Debug\net8.0\ref\SimpleDB.Tests.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_SimpleDB.Tests
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\bin\Debug\net8.0\CsvHelper.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\bin\Debug\net8.0\SimpleDB.dll
+C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests\bin\Debug\net8.0\SimpleDB.pdb
