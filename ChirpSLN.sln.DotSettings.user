@@ -1,6 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e2afad5_002Dff1f_002D4fa5_002Db453_002D7c532be39469/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Test1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::4F5AAAFA-C72C-43A0-8C82-CB23C9A46190::net8.0::Chirp.CLI.Clint.Tests.UnitTest1.Test1&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;Project Location="C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\Chirp.CLI.Clint.Tests" Presentation="&amp;lt;test&amp;gt;\&amp;lt;Chirp.CLI.Clint.Tests&amp;gt;" /&gt;&#xD;
+    &lt;Project Location="C:\Users\alexj\OneDrive\Skrivebord\Analysis, Design and Software Architecture\Chirp\test\SimpleDB.Tests" Presentation="&amp;lt;test&amp;gt;\&amp;lt;SimpleDB.Tests&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
