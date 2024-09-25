@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chirp.CSVDBService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33ca9f0a8591f6551be3ecf4c19e5d05866f98bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d37720edd65d1a6c758c977f7e772a5f1a0a099")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chirp.CSVDBService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chirp.CSVDBService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
