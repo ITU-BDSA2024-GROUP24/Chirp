@@ -11,62 +11,403 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5b83132-255d-41f4-97c5-152ba4cfe148" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Label_issue.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Move_assigned_issues.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build_and_test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/github-actions-demo.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/release.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]/Chirp.CLI.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]/Chirp.CLI.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]/Chirp.CLI.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]/project.nuget1.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/shelf/Uncommitted_changes_before_Checkout_at_04_09_2024_15_09__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Chirp.dir/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChirpSLN/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChirpSLN.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/ChirpSLN.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/SimpleDB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/SimpleDB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.genruntimeconfig.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/ref/Chirp.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/ref/Chirp.CLI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/refint/Chirp.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/refint/Chirp.CLI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/ref/SimpleDB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/ref/SimpleDB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/refint/SimpleDB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/refint/SimpleDB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.exe" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/SimpleDB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/SimpleDB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/ref/Chirp.CLI.Clint.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/ref/Chirp.CLI.Clint.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/refint/Chirp.CLI.Clint.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/refint/Chirp.CLI.Clint.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/ref/SimpleDB.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/ref/SimpleDB.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/refint/SimpleDB.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/refint/SimpleDB.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChirpSLN.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChirpSLN.sln.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/chirp_cli_db.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qodana.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/Cheep.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/Chirp.CLI.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/Folder.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/UserInterface.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/Chirp.CLI.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/CsvHelper.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/data/chirp_cli_db.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Chirp.CLI.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.csproj.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/Chirp.CLI.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/ref/Chirp.CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/Debug/net8.0/refint/Chirp.CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CLI.Client/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/Chirp.CSVDBService.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CLI.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CLI.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CLI.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CSVDBService.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CSVDBService.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CSVDBService.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CSVDBService.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/Chirp.CSVDBService.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/CsvHelper.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/DocoptNet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/bin/Debug/net8.0/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Chirp.CSVDBService.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Chirp.CSVDBService.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Chirp.CSVDBService.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CS.5911E781.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/Chirp.CSVDBService.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/ref/Chirp.CSVDBService.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/refint/Chirp.CSVDBService.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/staticwebassets/msbuild.build.Chirp.CSVDBService.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Chirp.CSVDBService.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Chirp.CSVDBService.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chirp.CSVDBService/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/CSVDatabase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/IDatabaseRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/SimpleDB.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/SimpleDB.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/ref/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/Debug/net8.0/refint/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/SimpleDB.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/SimpleDB.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/SimpleDB.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimpleDB/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/Chirp.CLI.Clint.Tests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.Clint.Tests.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Chirp.CLI.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_Chirp.CLI.Clint.Tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/CsvHelper.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/DocoptNet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/SimpleDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/SimpleDB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/testhost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/testhost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.assert.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.execution.dotnet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Chirp.CLI.Clint.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Chirp.CLI.Clint.Tests.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Chirp.CLI.Clint.Tests.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CL.FD95B870.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/Chirp.CLI.Clint.Tests.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/ref/Chirp.CLI.Clint.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/Debug/net8.0/refint/Chirp.CLI.Clint.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Chirp.CLI.Clint.Tests/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/SimpleDB.Tests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_SimpleDB.Tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CommunicationUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CoreUtilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.CrossPlatEngine.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.PlatformAbstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.TestPlatform.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.CodeCoverage.Shim.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/NuGet.Frameworks.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/SimpleDB.Tests.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/testhost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/testhost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.assert.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.execution.dotnet.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/bin/Debug/net8.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.0147F4AA.Up2Date" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/SimpleDB.Tests.sourcelink.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/ref/SimpleDB.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/Debug/net8.0/refint/SimpleDB.Tests.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/SimpleDB.Tests.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/SimpleDB.Tests.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/SimpleDB.Tests.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/SimpleDB.Tests/obj/rider.project.restore.info" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,9 +429,6 @@
     &quot;accountId&quot;: &quot;87ec7dbe-a645-4a21-9e0e-1e911a3bdb48&quot;
   }
 }</component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../Chirp.CSVDBService/Program.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -100,20 +438,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.Chirp.CLI.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "pr__test",
-    "last_opened_file_path": "C:/Users/alexj/OneDrive/Skrivebord/Analysis, Design and Software Architecture/Chirp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.Chirp.CLI.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexj/OneDrive/Skrivebord/Analysis, Design and Software Architecture/Chirp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.Chirp.CLI">
     <configuration name="Chirp.CLI" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
