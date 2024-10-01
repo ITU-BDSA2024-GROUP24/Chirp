@@ -1,0 +1,39 @@
+name: Publish
+on:
+  push:
+    tags:
+      - '*.*.*'
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 8.0.x
+      - name: Build
+        shell: bash
+        run: |
+          tag=$(git describe --tags --abbrev=0)
+          release_name="Chirp-$tag-linux-x64"
+
+          # Build everything
+          dotnet publish src/Chirp.CLI.Client/Chirp.CLI.csproj --framework net8.0 --runtime "linux-x64" -c Release -o "$release_name"
+
+          # Pack files
+          tar czvf "${release_name}.tar.gz" "$release_name"
+
+          # Delete output directory
+          rm -r "$release_name"
+
+      - name: Publish
+        uses: softprops/action-gh-release@v1
+        with:
+          files: "Chirp-*"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
