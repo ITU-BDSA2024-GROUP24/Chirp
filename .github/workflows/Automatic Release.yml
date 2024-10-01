@@ -1,4 +1,4 @@
-name: Publish
+name: Automatic Release
 on:
   push:
     tags:
@@ -23,7 +23,7 @@ jobs:
           release_name="Chirp-$tag-linux-x64"
 
           # Build everything
-          dotnet publish src/Chirp.CLI.Client/Chirp.CLI.csproj --framework net8.0 --runtime "linux-x64" -c Release -o "$release_name"
+          dotnet publish --framework net8.0 --runtime "linux-x64" -c Release -o "$release_name"
 
           # Pack files
           tar czvf "${release_name}.tar.gz" "$release_name"
