@@ -2566,19 +2566,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bianc\\.nuget\\packages\\": {}
+    "C:\\Users\\frede\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bianc\\Documents\\BDSA\\Chirp\\Chirp.Razor.csproj",
+      "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.Razor.csproj",
       "projectName": "Chirp.Razor",
-      "projectPath": "C:\\Users\\Bianc\\Documents\\BDSA\\Chirp\\Chirp.Razor.csproj",
-      "packagesPath": "C:\\Users\\Bianc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bianc\\Documents\\BDSA\\Chirp\\obj\\",
+      "projectPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.Razor.csproj",
+      "packagesPath": "C:\\Users\\frede\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Bianc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\frede\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
