@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\Chirp.Razor.csproj": {}
+    "/Users/carolineslothjohansen/Documents/GitHub/Chirp/Chirp.Razor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\Chirp.Razor.csproj": {
+    "/Users/carolineslothjohansen/Documents/GitHub/Chirp/Chirp.Razor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\Chirp.Razor.csproj",
+        "projectUniqueName": "/Users/carolineslothjohansen/Documents/GitHub/Chirp/Chirp.Razor.csproj",
         "projectName": "Chirp.Razor",
-        "projectPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\Chirp.Razor.csproj",
-        "packagesPath": "C:\\Users\\alexj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexj\\OneDrive\\Skrivebord\\Analysis, Design and Software Architecture\\Chirp\\obj\\",
+        "projectPath": "/Users/carolineslothjohansen/Documents/GitHub/Chirp/Chirp.Razor.csproj",
+        "packagesPath": "/Users/carolineslothjohansen/.nuget/packages/",
+        "outputPath": "/Users/carolineslothjohansen/Documents/GitHub/Chirp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alexj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/carolineslothjohansen/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -42,6 +42,18 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0-rc.1.24451.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

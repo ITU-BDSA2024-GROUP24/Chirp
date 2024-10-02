@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Chirp.Razor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8508c70bbeaa2c4e683d0469c8c391214bda0e4c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+218fe688deba19fbdf9449cef613681c70a02290")]
 [assembly: System.Reflection.AssemblyProductAttribute("Chirp.Razor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Chirp.Razor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
