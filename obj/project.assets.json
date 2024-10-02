@@ -3570,19 +3570,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/carolineslothjohansen/.nuget/packages/": {}
+    "C:\\Users\\frede\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/carolineslothjohansen/Documents/GitHub/Chirp/Chirp.Razor.csproj",
+      "projectUniqueName": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.Razor.csproj",
       "projectName": "Chirp.Razor",
-      "projectPath": "/Users/carolineslothjohansen/Documents/GitHub/Chirp/Chirp.Razor.csproj",
-      "packagesPath": "/Users/carolineslothjohansen/.nuget/packages/",
-      "outputPath": "/Users/carolineslothjohansen/Documents/GitHub/Chirp/obj/",
+      "projectPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\Chirp.Razor.csproj",
+      "packagesPath": "C:\\Users\\frede\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\frede\\OneDrive\\Skrivebord\\Analyse, design og softwarearkitektur\\Chirp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/carolineslothjohansen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\frede\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -3641,7 +3641,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
