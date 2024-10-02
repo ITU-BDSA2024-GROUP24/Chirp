@@ -13,8 +13,13 @@ public class PublicModel : PageModel
         _service = service;
     }
 
-    public ActionResult OnGet()
+    public ActionResult OnGet([FromQuery] int page)
     {
+        page = page > 0 ? page - 1 : 1;
+        int pagesize = 36;
+        int skip = (page - 1) * pagesize;
+        //Cheeps = _service.GetCheeps(skip,pagesize);  to determine how many should be skipped for the pages
+        
         Cheeps = _service.GetCheeps();
         return Page();
     }
