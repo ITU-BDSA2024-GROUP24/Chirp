@@ -10,7 +10,7 @@ namespace Chirp.Razor
 
         public DbFacade()
         {
-            _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "/Users/carolineslothjohansen/Documents/GitHub/Chirp/ChirpService/data/chirp.db";
+            _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db";
         }
             
         private SqliteConnection GetConnection()
@@ -26,9 +26,9 @@ namespace Chirp.Razor
             {
                 connection.Open();
 
-                var sqlQuery = @"SELECT message.content, user.username, message.pub_date 
+                var sqlQuery = @"SELECT message.text, user.username, message.pub_date 
                                  FROM message 
-                                 JOIN user ON message.user_id = user.id 
+                                 JOIN user ON message.author_id = author_id 
                                  WHERE user.username = @Author 
                                  ORDER BY message.pub_date DESC";
 
