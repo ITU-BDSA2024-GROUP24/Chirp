@@ -7,4 +7,11 @@ public class Cheep
 
     private ICollection<Author> _authors;
 
+    public Cheep(string Text, DateTime Timestamp)
+    {
+        this.Text = Text;
+        this.Timestamp = Timestamp;
+        
+    }
+
 }
