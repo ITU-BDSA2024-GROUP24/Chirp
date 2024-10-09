@@ -10,7 +10,15 @@ namespace Chirp.Razor
 
         public DbFacade()
         {
-            _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db";
+            try
+            {
+                _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db";
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
             
         }
             
