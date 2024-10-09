@@ -11,6 +11,7 @@ namespace Chirp.Razor
         public DbFacade()
         {
             _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db";
+            
         }
             
         private SqliteConnection GetConnection()
