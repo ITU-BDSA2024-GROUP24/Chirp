@@ -4,8 +4,8 @@ public record CheepViewModel(string Author, string Message, string Timestamp);
 
 public interface ICheepService
 {
-    List<CheepViewModel> GetCheeps();
-    List<CheepViewModel> GetCheepsFromAuthor(string author);
+    List<CheepViewModel> GetCheeps(int skip);
+    List<CheepViewModel> GetCheepsFromAuthor(string author, int skip);
 }
 
 public class CheepService : ICheepService
@@ -17,13 +17,13 @@ public class CheepService : ICheepService
         _dbFacade = new DbFacade(); 
     }
 
-    public List<CheepViewModel> GetCheeps()
+    public List<CheepViewModel> GetCheeps(int skip)
     {
-        return _dbFacade.GetCheeps();  // Call instance method
+        return _dbFacade.GetCheeps (skip);  // Call instance method
     }
 
-    public List<CheepViewModel> GetCheepsFromAuthor(string author)
+    public List<CheepViewModel> GetCheepsFromAuthor(string author, int skip)
     {
-        return _dbFacade.GetCheepsFromAuthor(author);  // Call instance method
+        return _dbFacade.GetCheepsFromAuthor(author, skip);  // Call instance method
     }
 }
