@@ -15,12 +15,8 @@ public class PublicModel : PageModel
 
     public ActionResult OnGet([FromQuery] int page)
     {
-        page = page > 0 ? page - 1 : 1;
-        int pagesize = 32;
-        int skip = (page - 1) * pagesize;
-        //Cheeps = _service.GetCheeps(skip,pagesize);  to determine how many should be skipped for the pages
-        
-        Cheeps = _service.GetCheeps();
+        int skip = (page - 1) * 32;
+        Cheeps = _service.GetCheeps(skip);
         return Page();
     }
 }
