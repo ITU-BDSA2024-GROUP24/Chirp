@@ -12,7 +12,7 @@ public class Cheep
     public Author Author { get; set; }
     
     [Required]
-    [StringLength(500)]
+    [StringLength(160)]
     public string Text { get; set; }
     [Required]
     public DateTime TimeStamp { get; set; }
