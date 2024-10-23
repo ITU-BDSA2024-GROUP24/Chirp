@@ -6,7 +6,7 @@ namespace Chirp.Razor.Pages;
 public class PublicModel : PageModel
 {
     private readonly ICheepService _service;
-    public List<CheepViewModel> Cheeps { get; set; }
+    required public List<CheepViewModel> Cheeps { get; set; } 
 
     public PublicModel(ICheepService service)
     {
@@ -15,6 +15,11 @@ public class PublicModel : PageModel
 
     public ActionResult OnGet([FromQuery] int page)
     {
+        if (page < 1)
+        {
+            return Redirect($"{Request.Path}?page=1");
+        }
+        
         int skip = (page - 1) * 32;
         Cheeps = _service.GetCheeps(skip);
         return Page();
