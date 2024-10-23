@@ -5,7 +5,7 @@ public class Cheep
     public string Text { get; set; }
     public DateTime Timestamp { get; set; }
 
-    private ICollection<Author> _authors;
+    private ICollection<Author>? _authors;
 
     public Cheep(string Text, DateTime Timestamp)
     {
