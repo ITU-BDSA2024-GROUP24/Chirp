@@ -12,7 +12,7 @@ namespace Chirp.Razor
         {
             try
             {
-                _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db";
+                
             }
             catch (Exception e)
             {
