@@ -15,13 +15,12 @@ public class UserTimelineModel : PageModel
 
     public ActionResult OnGet(string author, [FromQuery] int page)
     {
-        if (page < 1)
-        {
-            return Redirect($"{Request.Path}?page=1");
-        }
-        
-        int skip = (page - 1) * 32;
-        Cheeps = _service.GetCheepsFromAuthor(author,skip); 
+        page = page > 0 ? page - 1 : 1;
+        int pagesize = 32;
+        int skip = (page - 1) * pagesize;
+        //Cheeps = _service.GetCheeps(skip,pagesize); // to determine how many should be skipped for the pages
+        Cheeps = _service.GetCheepsFromAuthor(skip, author);
+
         return Page();
     }
 }

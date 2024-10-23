@@ -1,4 +1,5 @@
 namespace Chirp.Razor
+
 {
     using Microsoft.Data.Sqlite;
     using System;
@@ -6,13 +7,14 @@ namespace Chirp.Razor
 
     public class DbFacade
     {
-        private string? _sqlDbFilePath;
+        /*private string? _sqlDbFilePath;
+
 
         public DbFacade()
         {
             try
             {
-                _sqlDbFilePath = Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db";
+                
             }
             catch (Exception e)
             {
@@ -22,6 +24,7 @@ namespace Chirp.Razor
             
         }
             
+        
         private SqliteConnection GetConnection()
         {
             return new SqliteConnection($"Data Source={_sqlDbFilePath};");
@@ -88,11 +91,6 @@ namespace Chirp.Razor
             return cheeps;
         }
 
-        private string UnixTimeStampToDateTimeString(long unixTimeStamp)
-        {
-            DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
-            dateTime = dateTime.AddSeconds(unixTimeStamp);
-            return dateTime.ToString("MM/dd/yy H:mm:ss");
-        }
+     */   
     }
 }

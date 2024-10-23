@@ -1,17 +1,20 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Chirp.Razor;
 
 public class Author
-{
-    public string Name { get; set; }
-    public string Email { get; set; }
+{ 
+    [Required] 
+    public required int AuthorId { get; set; }
     
-    private ICollection<Cheep>? _cheeps;
-
-    public Author (string name, string email)
-    {
-        this.Name = name;
-        this.Email = email;
-    }
+    [Required] 
+    public required string Name { get; set; }
     
+    
+    [Required] 
+    public required string Email { get; set; }
+    
+    [Required]
+    public required ICollection<Cheep> Cheeps;
     
 }
