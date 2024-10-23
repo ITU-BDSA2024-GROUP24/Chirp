@@ -1,13 +1,19 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace Chirp.Razor;
 
 public class Cheep
 {
-    public required int CheepId { get; set; }
-    
-    public required int AuthorId { get; set; }
-    public required Author Author { get; set; }
-    public required string Text { get; set; }
-    public required DateTime TimeStamp { get; set; }
+    [Required]
+    public int CheepId { get; set; }
+    [Required]
+    public int AuthorId { get; set; }
+    [Required]
+    public Author Author { get; set; }
+    [Required]
+    public string Text { get; set; }
+    [Required]
+    public DateTime TimeStamp { get; set; }
     
 
     //private ICollection<Author> _authors;
