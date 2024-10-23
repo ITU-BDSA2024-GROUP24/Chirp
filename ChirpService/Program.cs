@@ -1,4 +1,5 @@
 using Chirp.Razor;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddSingleton<ICheepService, CheepService>();
 builder.Services.AddScoped<ICheepRepository, CheepRepository>();
+builder.Services.AddDbContext<ChirpDBContext>(options => options.UseSqlite($"Data Source={Environment.GetEnvironmentVariable("CHIRPDBPATH") ?? "./data/chirp.db"};"));
 
 
 var app = builder.Build();

@@ -6,7 +6,7 @@ namespace Chirp.Razor
 
     public class DbFacade
     {
-        private string _sqlDbFilePath;
+        private string? _sqlDbFilePath;
 
         public DbFacade()
         {
