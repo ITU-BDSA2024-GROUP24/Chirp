@@ -18,8 +18,8 @@ public class UserTimelineModel : PageModel
         page = page > 0 ? page - 1 : 1;
         int pagesize = 32;
         int skip = (page - 1) * pagesize;
-        //Cheeps = _service.GetCheeps(skip,pagesize);  to determine how many should be skipped for the pages
-        Cheeps = _service.GetCheepsFromAuthor(author);
+        //Cheeps = _service.GetCheeps(skip,pagesize); // to determine how many should be skipped for the pages
+        Cheeps = _service.GetCheepsFromAuthor(skip, author);
         return Page();
     }
 }

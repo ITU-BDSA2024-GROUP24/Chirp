@@ -4,26 +4,57 @@ public record CheepViewModel(string Author, string Message, string Timestamp);
 
 public interface ICheepService
 {
-    List<CheepViewModel> GetCheeps();
-    List<CheepViewModel> GetCheepsFromAuthor(string author);
+    List<CheepViewModel> GetCheeps(int page);
+    List<CheepViewModel> GetCheepsFromAuthor(int page, string author);
 }
 
 public class CheepService : ICheepService
 {
-    private readonly DbFacade _dbFacade;                            
-
-    public CheepService()
+    private readonly ICheepRepository _repository;
+    public CheepService(ICheepRepository repository)
     {
-        _dbFacade = new DbFacade(); 
+        _repository = repository; 
     }
 
-    public List<CheepViewModel> GetCheeps()
+    public List<CheepViewModel> GetCheeps(int page)
     {
-        return _dbFacade.GetCheeps();  // Call instance method
+        List<CheepDTO> cheepDTOs = _repository.ReadCheepDTO(page).Result;
+        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
+        return result;  // Call instance method
     }
 
-    public List<CheepViewModel> GetCheepsFromAuthor(string author)
+    public List<CheepViewModel> GetCheepsFromAuthor(int page, string author)
     {
-        return _dbFacade.GetCheepsFromAuthor(author);  // Call instance method
+        List<CheepDTO> cheepDTOs = _repository.ReadCheepDTOFromAuthor(page, author).Result;
+        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
+        return result;  // Call instance method
+    }
+    private string UnixTimeStampToDateTimeString(long unixTimeStamp)
+    {
+        DateTime dateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc);
+        dateTime = dateTime.AddSeconds(unixTimeStamp);
+        return dateTime.ToString("MM/dd/yy H:mm:ss");
+    }
+    
+    public Author GetAuthorByName(string name)
+    {
+        Author author = _repository.GetAuthorByName(name).Result;
+        return author;
+    }
+    
+    public Author GetAuthorByEmail(string email)
+    {
+        Author author = _repository.GetAuthorByName(email).Result;
+        return author;
+    }
+
+    public void AddCheep(Cheep cheep)
+    {
+        _repository.CreateCheep(cheep);
+    }
+
+    public void AddAuthor(Author author)
+    {
+        _repository.CreateAuthor(author);
     }
 }
