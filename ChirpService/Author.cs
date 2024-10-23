@@ -16,12 +16,5 @@ public class Author
     
     [Required]
     public required ICollection<Cheep> Cheeps;
-
-   /* public Author (string name, string email)
-    {
-        this.Name = name;
-        this.Email = email;
-    }*/
-    
     
 }

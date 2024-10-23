@@ -21,13 +21,7 @@ public class Cheep
     public required DateTime TimeStamp { get; set; }
     
 
-    //private ICollection<Author> _authors;
 
-   /* public Cheep(string Text, DateTime TimeStamp)
-    {
-        this.Text = Text;
-        this.TimeStamp = TimeStamp;
-        
-    }*/
+    //private ICollection<Author> _authors;
 
 }

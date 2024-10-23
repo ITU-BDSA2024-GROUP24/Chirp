@@ -6,7 +6,7 @@ namespace Chirp.Razor.Pages;
 public class UserTimelineModel : PageModel
 {
     private readonly ICheepService _service;
-    public List<CheepViewModel> Cheeps { get; set; }
+    required public List<CheepViewModel> Cheeps { get; set; }
 
     public UserTimelineModel(ICheepService service)
     {
@@ -20,6 +20,7 @@ public class UserTimelineModel : PageModel
         int skip = (page - 1) * pagesize;
         //Cheeps = _service.GetCheeps(skip,pagesize); // to determine how many should be skipped for the pages
         Cheeps = _service.GetCheepsFromAuthor(skip, author);
+
         return Page();
     }
 }

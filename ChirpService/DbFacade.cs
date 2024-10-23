@@ -9,6 +9,7 @@ namespace Chirp.Razor
     {
         /*private string? _sqlDbFilePath;
 
+
         public DbFacade()
         {
             try
@@ -29,7 +30,7 @@ namespace Chirp.Razor
             return new SqliteConnection($"Data Source={_sqlDbFilePath};");
         }
 
-        public List<CheepViewModel> GetCheepsFromAuthor(string author)
+        public List<CheepViewModel> GetCheepsFromAuthor(string author, int skip)
         {
             var cheeps = new List<CheepViewModel>();
 
@@ -40,11 +41,13 @@ namespace Chirp.Razor
                 var sqlQuery = @"SELECT message.text, user.username, message.pub_date 
                                  FROM message 
                                  JOIN user ON message.author_id = author_id 
-                                 WHERE user.username = @Author 
-                                 ORDER BY message.pub_date DESC";
+                                 WHERE user.username = @Author
+                                 ORDER BY message.pub_date DESC
+                                 LIMIT 32 OFFSET @skip";
 
                 using var command = new SqliteCommand(sqlQuery, connection);
                 command.Parameters.AddWithValue("@Author", author);
+                command.Parameters.AddWithValue("@skip", skip);
 
                 using var reader = command.ExecuteReader();
                 while (reader.Read())
@@ -58,7 +61,7 @@ namespace Chirp.Razor
             return cheeps;
         }
 
-        public List<CheepViewModel> GetCheeps()
+        public List<CheepViewModel> GetCheeps(int skip)
         {
             var cheeps = new List<CheepViewModel>();
 
@@ -69,10 +72,12 @@ namespace Chirp.Razor
                 var sqlQuery = @"SELECT message.text, user.username, message.pub_date 
                                  FROM message 
                                  JOIN user ON message.author_id = author_id 
-                                 ORDER BY message.pub_date DESC";
+                                 ORDER BY message.pub_date DESC
+                                 LIMIT 32 OFFSET @skip";
 
                 using var command = new SqliteCommand(sqlQuery, connection);
-
+                command.Parameters.AddWithValue("@skip", skip);
+                
                 using var reader = command.ExecuteReader();
                 while (reader.Read())
                 {

@@ -6,6 +6,7 @@ public interface ICheepService
 {
     List<CheepViewModel> GetCheeps(int page);
     List<CheepViewModel> GetCheepsFromAuthor(int page, string author);
+
 }
 
 public class CheepService : ICheepService
@@ -56,5 +57,6 @@ public class CheepService : ICheepService
     public void AddAuthor(Author author)
     {
         _repository.CreateAuthor(author);
+
     }
 }
