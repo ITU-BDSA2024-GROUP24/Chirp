@@ -22,10 +22,11 @@ namespace Chirp.Razor
             
         }
             
-        private SqliteConnection GetConnection()
+        
+        /*private SqliteConnection GetConnection()
         {
             return new SqliteConnection($"Data Source={_sqlDbFilePath};");
-        }
+        }*/
 
         public List<CheepViewModel> GetCheepsFromAuthor(string author)
         {

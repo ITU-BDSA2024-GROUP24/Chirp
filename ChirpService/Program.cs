@@ -7,7 +7,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<ICheepService, CheepService>();
 builder.Services.AddScoped<ICheepRepository, CheepRepository>();
-builder.Services.AddDbContext<ChirpDBContext>(options => options.UseSqlite($"Data Source={Environment.GetEnvironmentVariable("CHIRPDBPATH")};"));
+
+string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<ChirpDBContext>(options => options.UseSqlite(connectionString));
 
 
 var app = builder.Build();

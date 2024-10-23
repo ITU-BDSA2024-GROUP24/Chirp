@@ -11,6 +11,8 @@ public class CheepRepository : ICheepRepository
         context.Database.EnsureCreated();
         DbInitializer.SeedDatabase(_context);
     }
+    
+    
     public Task CreateCheep(CheepDTO newCheep)
     {
         throw new NotImplementedException();
