@@ -10,7 +10,9 @@ public class Cheep
     public int AuthorId { get; set; }
     [Required]
     public Author Author { get; set; }
+    
     [Required]
+    [StringLength(500)]
     public string Text { get; set; }
     [Required]
     public DateTime TimeStamp { get; set; }
