@@ -9,7 +9,8 @@ builder.Services.AddScoped<ICheepService, CheepService>();
 builder.Services.AddScoped<ICheepRepository, CheepRepository>();
 
 string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<ChirpDBContext>(options => options.UseSqlite(connectionString));
+
+builder.Services.AddDbContext<ChirpDBContext>(options => options.UseSqlite("Data Source=chirp.db"));
 
 
 var app = builder.Build();
@@ -17,9 +18,9 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
-    var Seed = services.GetRequiredService<ChirpDBContext>();
-    Seed.Database.Migrate();
-    DbInitializer.SeedDatabase(Seed);
+    var dbContext = services.GetRequiredService<ChirpDBContext>();
+    dbContext.Database.Migrate();
+    DbInitializer.SeedDatabase(dbContext);
 }
 
 
@@ -40,3 +41,4 @@ app.UseRouting();
 app.MapRazorPages();
 
 app.Run();
+
