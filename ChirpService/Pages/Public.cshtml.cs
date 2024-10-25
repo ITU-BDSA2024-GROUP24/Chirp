@@ -20,8 +20,8 @@ public class PublicModel : PageModel
             return Redirect($"{Request.Path}?page=1");
         }
         
-        int skip = (page - 1) * 32;
-        Cheeps = _service.GetCheeps(skip);
+
+        Cheeps = _service.GetCheeps(page);
         return Page();
     }
 }
