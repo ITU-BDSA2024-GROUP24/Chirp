@@ -19,10 +19,7 @@ using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     var dbContext = services.GetRequiredService<ChirpDBContext>();
-    if (dbContext.Database.GetPendingMigrations().Any())
-    {
-        dbContext.Database.Migrate();
-    }
+    dbContext.Database.EnsureCreated();
     DbInitializer.SeedDatabase(dbContext); // Seed data only if necessary
 }
 
