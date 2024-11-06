@@ -32,6 +32,12 @@ public class CheepRepository : ICheepRepository
         return query.FirstOrDefaultAsync()!;
     }
     
+    // this method is a nullable type, it is used in create a cheep to check if the Author exists or not. 
+    public Task<Author?> FindAuthorByName(string name)
+    {
+        return _context.Authors.FirstOrDefaultAsync(a => a.Name == name);
+    }
+    
     public Task<Author> GetAuthorByEmail(string email)
     {
         var query = (from author in _context.Authors where author.Email == email select author);
@@ -39,12 +45,25 @@ public class CheepRepository : ICheepRepository
         return query.FirstOrDefaultAsync()!;
     }
     
-    
+    // add to existing code so: 'Note, that might mean to also create a respective author if she does not exist yet in Chirp!.' 
     public async Task CreateCheep(Cheep newCheep)
     {
+        var authorExisting = await FindAuthorByName(newCheep.Author.Name);
+
+        if (authorExisting == null)
+        {
+            await CreateAuthor(newCheep.Author);
+        }
+        else
+        {
+            newCheep.Author = authorExisting;
+            newCheep.AuthorId = authorExisting.AuthorId;
+        }
+        
         _context.Add(newCheep);
-        await _context.SaveChangesAsync();;
+        await _context.SaveChangesAsync();
     }
+    
     public async Task CreateAuthor(Author newAuthor)
     {
         _context.Add(newAuthor);
