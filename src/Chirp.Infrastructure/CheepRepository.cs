@@ -3,9 +3,19 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Chirp.Infrastructure;
 
+public interface ICheepRepository
+{
+    public Task CreateCheep(Cheep newCheep);
+    public Task CreateAuthor(Author newCheep);
+    public Task<List<CheepDTO>> ReadCheepDTO(int page);
+    public Task<List<CheepDTO>> ReadCheepDTOFromAuthor(int page, string authorName);
+    //public Task UpdateCheep(CheepDTO alteredCheep);
+    public Task<Author> GetAuthorByName(string name);
+    public Task<Author> GetAuthorByEmail(string email);
+}  
+
 public class CheepRepository : ICheepRepository
 {
-    
     private readonly ChirpDBContext _context;
     private const int cheepsPerPage = 32;
 
@@ -53,10 +63,10 @@ public class CheepRepository : ICheepRepository
         return query.ToListAsync();
     }    }
 
-    public Task UpdateCheep(CheepDTO alteredCheep)
+   /* public Task UpdateCheep(CheepDTO alteredCheep)
     {
         throw new NotImplementedException();
-    }
+    }*/
     
     public Task<List<CheepDTO>> ReadCheepDTOFromAuthor(int page, string authorName)
     {
