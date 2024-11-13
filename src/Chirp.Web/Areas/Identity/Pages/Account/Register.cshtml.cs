@@ -86,8 +86,8 @@ namespace Chirp.Web.Areas.Identity.Pages.Account
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
             [Required]
-            [Display(Name = "DisplayName")]
-            public string DisplayName { get; set; }
+            [Display(Name = "UserName")]
+            public string UserName { get; set; }
 
             
             /// 
@@ -121,9 +121,9 @@ namespace Chirp.Web.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
-                user.DisplayName = Input.DisplayName;
+                user.UserName = Input.UserName;
 
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.UserName, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 

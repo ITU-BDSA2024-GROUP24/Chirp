@@ -23,11 +23,14 @@ namespace Chirp.Web.Areas.Identity.Pages.Account
     {
         private readonly SignInManager<Author> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly UserManager<Author> _userManager;
 
-        public LoginModel(SignInManager<Author> signInManager, ILogger<LoginModel> logger)
+        public LoginModel(SignInManager<Author> signInManager, ILogger<LoginModel> logger, UserManager<Author> userManager)
         {
             _signInManager = signInManager;
             _logger = logger;
+            _userManager = userManager;
+
         }
 
         /// <summary>
@@ -113,7 +116,15 @@ namespace Chirp.Web.Areas.Identity.Pages.Account
             {
                 // This doesn't count login failures towards account lockout
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
+                var user = await _userManager.FindByEmailAsync(Input.Email);
+                
+                if (user == null) // Check if user with provided email exists
+                {
+                    ModelState.AddModelError(string.Empty, "No user found with that email address.");
+                    return Page();
+                }
+                
+                var result = await _signInManager.PasswordSignInAsync(user, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
