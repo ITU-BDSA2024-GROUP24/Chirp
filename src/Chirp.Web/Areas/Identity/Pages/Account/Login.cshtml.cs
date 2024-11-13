@@ -118,7 +118,7 @@ namespace Chirp.Web.Areas.Identity.Pages.Account
                 // To enable password failures to trigger account lockout, set lockoutOnFailure: true
                 var user = await _userManager.FindByEmailAsync(Input.Email);
                 
-                if (user == null) // Check if user with provided email exists
+                if (user == null)
                 {
                     ModelState.AddModelError(string.Empty, "No user found with that email address.");
                     return Page();
