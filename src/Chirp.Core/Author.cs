@@ -1,19 +1,10 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Identity;
 
 namespace Chirp.Core;
 
-public class Author
+public class Author : IdentityUser
 { 
-    [Required] 
-    public required int AuthorId { get; set; }
-    
-    [Required] 
-    public required string Name { get; set; }
-    
-    
-    [Required] 
-    public required string Email { get; set; }
-    
     [Required]
     public required ICollection<Cheep> Cheeps;
     
