@@ -14,19 +14,19 @@
             <div>
                 <a href="/@(User.Identity.Name)">my timeline</a> |
                 <a href="/">public timeline</a> |
-                <a ... >logout [@(User.Identity.Name)]</a>
+                <a href="/" >logout [@(User.Identity.Name)]</a>
             </div>
         }
         else
         {
             <div>
                 <a href="/">public timeline</a> |
-                <a ... >register</a>
-                <a ... >login</a>
+                <a href="/Identity/Account/Register" >register</a>
+                <a href="/Identity/Account/Login" >login</a>
             </div>
         }
     </div>
-    <partial name="_LoginPartial" />
+    
     <div class=body>
             @RenderBody()
     </div>

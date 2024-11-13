@@ -6,12 +6,12 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 namespace Chirp.Infrastructure;
 
 
-public class ChirpDBContext : IdentityDbContext<ApplicationUser>
+public class ChirpDBContext : IdentityDbContext<Author>
 {
     public ChirpDBContext(DbContextOptions<ChirpDBContext> options) : base(options) { }
     
     public DbSet<Cheep>  Cheeps { get; set; }   
     
-    public DbSet<Author> Authors { get; set; }
+    public DbSet<Core.Author> Authors { get; set; }
     
 }
