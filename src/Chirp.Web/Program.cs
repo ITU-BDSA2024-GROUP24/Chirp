@@ -1,6 +1,7 @@
 using Chirp.Core;
 using Chirp.Infrastructure;
 using Chirp.Razor;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
@@ -37,6 +38,20 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        options.DefaultChallengeScheme = "GitHub";
+    })
+    .AddCookie()
+    .AddGitHub(o =>
+    {
+        o.ClientId = builder.Configuration["authentication:github:clientId"];
+        o.ClientSecret = builder.Configuration["authentication:github:clientSecret"];
+        o.CallbackPath = "/signin-github";
+    });
+
 app.UseDeveloperExceptionPage();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -45,6 +60,7 @@ app.UseRouting();
 
 app.UseAuthentication(); 
 app.UseAuthorization();
+app.UseSession();
 
 app.MapRazorPages();
 
