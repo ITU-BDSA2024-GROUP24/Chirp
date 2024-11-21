@@ -6,7 +6,7 @@
 @if (SignInManger.IsSignedIn(User))
 {
     <div>class="CheepMessageField"
-        <h4> Hello @(User.Identity!.Name), what do you want to share today? :))</h4>
+        <h3> Hello @(User.Identity!.Name), what do you want to share today? :))</h3>
         <form method="post">
             <input style="float: none " type="text" asp-for="Message" />
             <input type="submit" value="Post"/>

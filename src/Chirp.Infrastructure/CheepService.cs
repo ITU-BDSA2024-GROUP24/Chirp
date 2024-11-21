@@ -9,7 +9,8 @@ public interface ICheepService
 {
     List<CheepViewModel> GetCheeps(int page);
     List<CheepViewModel> GetCheepsFromAuthor(int page, string author);
-
+    
+    void AddCheep(Author author, string text);
 }
 
 public class CheepService : ICheepService
