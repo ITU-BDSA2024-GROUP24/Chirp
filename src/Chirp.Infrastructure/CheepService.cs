@@ -52,8 +52,15 @@ public class CheepService : ICheepService
         return author;
     }
 
-    public void AddCheep(Cheep cheep)
+    public void AddCheep(Author author, string text)
     {
+        Cheep cheep = new()
+        {
+            Author = author,
+            Text = text,
+            TimeStamp = DateTime.Now
+
+        };
         _repository.CreateCheep(cheep);
     }
 
