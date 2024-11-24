@@ -4,8 +4,9 @@ using Chirp.Infrastructure;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Chirp.Web.Pages.Shared.Model;
+using Chirp.Web.Pages.Shared;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+
 
 
 namespace Chirp.Web.Pages;

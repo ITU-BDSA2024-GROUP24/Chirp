@@ -1,6 +1,7 @@
 ﻿@page "/"
 @using Microsoft.EntityFrameworkCore
 @model Chirp.Web.Pages.PublicModel
+
 @{
     ViewData["Title"] = "Chirp!";
     Layout = "Shared/_Layout";
@@ -8,6 +9,21 @@
 
 <div>
     <h2> Public Timeline </h2>
+
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="CheepMessageField">
+            <h3>Hello, @(User.Identity!.Name)! What do you want to share today?</h3>
+            <form method="post" action="/">
+                <input type="text" asp-for="Input.Message" placeholder="Write your cheep..." />
+                <button type="submit">Post</button>
+            </form>
+        </div>
+    }
+    else
+    {
+        <p>Please <a href="/Identity/Account/Login">log in</a> to post a cheep.</p>
+    }
 
     @if (Model.Cheeps.Any())
     {

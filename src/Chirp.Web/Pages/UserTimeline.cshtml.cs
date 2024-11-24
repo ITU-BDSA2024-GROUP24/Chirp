@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Chirp.Core;
+using Chirp.Web.Pages.Shared;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Chirp.Web.Pages;
@@ -6,12 +9,40 @@ namespace Chirp.Web.Pages;
 public class UserTimelineModel : PageModel
 {
     private readonly ICheepService _service;
-    required public List<CheepViewModel> Cheeps { get; set; }
+    private readonly SignInManager<Author> _signInManager;
+    required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
 
-    public UserTimelineModel(ICheepService service)
+    [BindProperty] public CheepFormatMessage Input { get; set; } = new();
+
+    public UserTimelineModel(ICheepService service, SignInManager<Author> signInManager)
     {
+        _signInManager = signInManager;
         _service = service;
     }
+
+    public async Task<IActionResult> OnPostAsync()
+    {
+        if (!ModelState.IsValid)
+        {
+            //missing query
+            return Page();
+        }
+        else
+        {
+            Author? author = await _signInManager.UserManager.GetUserAsync(User);
+            if (author == null)
+            {
+                return Forbid("Please sign in");
+            }
+
+            _service.AddCheep(author, Input.Message ?? throw new NullReferenceException());
+        }
+
+        // missing query 
+        return RedirectToPage("page=1");
+    }
+
+
 
     public ActionResult OnGet(string author, [FromQuery] int page)
     {
@@ -24,3 +55,4 @@ public class UserTimelineModel : PageModel
         return Page();
     }
 }
+
