@@ -55,7 +55,7 @@ public class CheepService : ICheepService
         return author;
     }
 
-    public void AddCheep(Author author, string text)
+    public async Task AddCheep(Author author, string text)
     {
         Cheep cheep = new()
         {
@@ -64,7 +64,7 @@ public class CheepService : ICheepService
             TimeStamp = DateTime.Now
 
         };
-        _repository.CreateCheep(cheep);
+        await _repository.CreateCheep(cheep);
 
     }
 
