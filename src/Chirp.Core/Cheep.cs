@@ -7,8 +7,6 @@ public class Cheep
     [Required]
     public required int CheepId { get; set; }
     
-    [Required]
-    public required int AuthorId { get; set; }
     
     [Required]
     public required Author Author { get; set; }

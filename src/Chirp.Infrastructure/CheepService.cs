@@ -1,6 +1,7 @@
 using Chirp.Core;
 using Chirp.Infrastructure;
 using Chirp.Razor;
+using Author = Chirp.Core.Author;
 
 public record CheepViewModel(string Author, string Message, string Timestamp);
 
