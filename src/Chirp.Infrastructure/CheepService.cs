@@ -68,9 +68,8 @@ public class CheepService : ICheepService
 
     }
 
-    public void AddAuthor(Author author)
+    public async Task AddAuthor(Author author)
     {
-        _repository.CreateAuthor(author);
-
+        await _repository.CreateAuthor(author);
     }
 }
