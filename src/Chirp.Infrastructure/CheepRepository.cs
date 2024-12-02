@@ -15,14 +15,14 @@ public class CheepRepository : ICheepRepository
         context.Database.EnsureCreated();
     }
     
-    public Task<Core.Author> GetAuthorByName(string name)
+    public Task<Author> GetAuthorByName(string name)
     {
         var query = (from author in _context.Authors where author.UserName == name select author);
         
         return query.FirstOrDefaultAsync()!;
     }
     
-    public Task<Core.Author> GetAuthorByEmail(string email)
+    public Task<Author> GetAuthorByEmail(string email)
     {
         var query = (from author in _context.Authors where author.Email == email select author);
         
