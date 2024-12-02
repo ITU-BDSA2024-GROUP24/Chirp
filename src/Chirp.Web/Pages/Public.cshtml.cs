@@ -18,13 +18,10 @@ public class PublicModel : PageModel
     private readonly SignInManager<Author> _signInManager;
     public List<CheepViewModel> Cheeps { get; set; }  = new List<CheepViewModel>();
 
-    [BindProperty] public CheepFormatMessage Input { get; set; } = new();
-    
-    
-    
+    [BindProperty] 
+    public CheepFormatMessage Input { get; set; } = new();
     
     public PublicModel(ICheepService service, SignInManager<Author> signInManager)
-    
     {
         _service = service;
         _signInManager = signInManager;
