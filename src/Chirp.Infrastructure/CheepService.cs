@@ -27,14 +27,14 @@ public class CheepService : ICheepService
     {
         List<CheepDTO> cheepDTOs = _repository.ReadCheepDTO(page).Result;
         List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
-        return result;  // Call instance method
+        return result;  
     }
 
     public List<CheepViewModel> GetCheepsFromAuthor(int page, string author)
     {
         List<CheepDTO> cheepDTOs = _repository.ReadCheepDTOFromAuthor(page, author).Result;
         List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
-        return result;  // Call instance method
+        return result; 
     }
     private string UnixTimeStampToDateTimeString(long unixTimeStamp)
     {
