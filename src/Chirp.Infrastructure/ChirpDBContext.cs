@@ -9,9 +9,7 @@ namespace Chirp.Infrastructure;
 public class ChirpDBContext : IdentityDbContext<Author>
 {
     public ChirpDBContext(DbContextOptions<ChirpDBContext> options) : base(options) { }
-    
     public DbSet<Cheep>  Cheeps { get; set; }   
-    
     public DbSet<Core.Author> Authors { get; set; }
     
 }

@@ -32,8 +32,14 @@ public class CheepRepository : ICheepRepository
     
     public async Task CreateCheep(Cheep newCheep)
     {
-        _context.Add(newCheep);
-        await _context.SaveChangesAsync();;
+        if (newCheep.Text.Length > 160) {
+            throw new ArgumentException("Cheep text is too long");
+        }
+        else {
+          _context.Add(newCheep);
+                  await _context.SaveChangesAsync();;  
+        }
+        
     }
     public async Task CreateAuthor(Core.Author newAuthor)
     {
