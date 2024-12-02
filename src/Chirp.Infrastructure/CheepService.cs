@@ -43,16 +43,14 @@ public class CheepService : ICheepService
         return dateTime.ToString("MM/dd/yy H:mm:ss");
     }
     
-    public Author GetAuthorByName(string name)
+    public async Task<Author> GetAuthorByName(string name)
     {
-        Author author = _repository.GetAuthorByName(name).Result;
-        return author;
+        return await _repository.GetAuthorByName(name);
     }
     
-    public Author GetAuthorByEmail(string email)
+    public async Task<Author> GetAuthorByEmail(string email)
     {
-        Author author = _repository.GetAuthorByName(email).Result;
-        return author;
+        return await _repository.GetAuthorByEmail(email);
     }
 
     public async Task AddCheep(Author author, string text)
