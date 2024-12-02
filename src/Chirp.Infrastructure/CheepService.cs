@@ -9,8 +9,10 @@ public interface ICheepService
 {
     List<CheepViewModel> GetCheeps(int page);
     List<CheepViewModel> GetCheepsFromAuthor(int page, string author);
-    
-    void AddCheep(Author author, string text);
+    Task AddCheep(Author author, string text);
+    Task<Author> GetAuthorByName(string name);
+    Task<Author> GetAuthorByEmail(string email);
+    Task AddAuthor(Author author);
 }
 
 public class CheepService : ICheepService
