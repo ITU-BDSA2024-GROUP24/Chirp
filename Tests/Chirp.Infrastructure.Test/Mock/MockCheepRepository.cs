@@ -54,59 +54,59 @@ namespace Chirp.Infrastructure.Test.Mock
             return Task.CompletedTask;
         }
 
-        
-        
-        
-        
-        
+        public Task CreateAuthor(Author newAuthor)
+        {
+            _authors.Add(newAuthor);
+            return Task.CompletedTask;
+        }
 
-        
-        
-        
+        public Task<List<CheepDTO>> ReadCheepDTO(int page)
+        {
+            const int CheepsPerPage = 32;
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            var mockCheeps = _cheeps
+                .OrderByDescending(cheep => cheep.TimeStamp)
+                .Skip((page - 1) * CheepsPerPage)
+                .Take(CheepsPerPage)
+                .Select(cheep => new CheepDTO
+                {
+                    Author = cheep.Author.UserName,
+                    Text = cheep.Text,
+                    Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds
+                })
+                .ToList();
 
-        
-        
+            return Task.FromResult(mockCheeps);
+        }
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        public Task<List<CheepDTO>> ReadCheepDTOFromAuthor(int page, string authorName)
+        {
+            const int CheepsPerPage = 32;
+            var mockCheeps = _cheeps
+                .Where(cheep => cheep.Author.UserName == authorName)
+                .OrderByDescending(cheep => cheep.TimeStamp)
+                .Skip((page - 1) * CheepsPerPage)
+                .Take(CheepsPerPage)
+                .Select(cheep => new CheepDTO
+                {
+                    Author = cheep.Author.UserName,
+                    Text = cheep.Text,
+                    Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds
+                })
+                .ToList();
 
-        
-        
+            return Task.FromResult(mockCheeps);
+        }
 
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        public Task UpdateCheep(CheepDTO alteredCheep)
+        {
+            var cheep = _cheeps.FirstOrDefault(c => c.Text == alteredCheep.Text);
+            if (cheep != null)
+            {
+                cheep.Text = alteredCheep.Text;
+            }
+            return Task.CompletedTask;
+        }
 
         
         
