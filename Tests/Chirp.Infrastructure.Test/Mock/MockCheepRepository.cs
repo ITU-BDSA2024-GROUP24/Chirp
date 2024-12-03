@@ -108,16 +108,16 @@ namespace Chirp.Infrastructure.Test.Mock
             return Task.CompletedTask;
         }
 
-        
-        
-        
-        
-        
+        public Task<Author> GetAuthorByName(string name)
+        {
+            var author = _authors.FirstOrDefault(a => a.UserName == name);
+            return Task.FromResult(author);
+        }
 
-        
-        
-        
-        
-        
+        public Task<Author> GetAuthorByEmail(string email)
+        {
+            var author = _authors.FirstOrDefault(a => a.Email == email);
+            return Task.FromResult(author);
+        }
     }
 }
