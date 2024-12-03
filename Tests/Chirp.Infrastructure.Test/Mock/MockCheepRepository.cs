@@ -1,77 +1,123 @@
 using Chirp.Core;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Chirp.Infrastructure;
-using Microsoft.EntityFrameworkCore;
 
-namespace Chirp.Tests.Mock;
-
-public class MockCheepRepository : ICheepRepository
-
+namespace Chirp.Infrastructure.Test.Mock
 {
-    private readonly ChirpDBContext _context;
-    private const int cheepsPerPage = 32;
+    public class MockCheepRepository : ICheepRepository
+    {
+        private readonly List<Cheep> _cheeps = new();
+        private readonly List<Author> _authors = new();
 
-    public CheepRepository(ChirpDBContext context)
-    {
-        _context = context;
-        context.Database.EnsureCreated();
-    }
-    
-    public Task<Author> GetAuthorByName(string name)
-    {
-        var query = (from author in _context.Authors where author.Name == name select author);
+        public MockCheepRepository()
+        {
+            var author1 = new Author()
+            {
+                UserName = "Author1",
+                Email = "author1@example.com" ,
+                Cheeps = new List<Cheep>()
+            };
+
+            var author2 = new Author()
+            {
+                UserName = "Author2",
+                Email = "author2@example.com" ,
+                Cheeps = new List<Cheep>()
+            };
+
+            _authors.AddRange(new[] { author1, author2 });
+            _cheeps.AddRange(new[]
+            
+            {
+                new Cheep
+                {
+                    Author = author1,
+                    Text = "This is the first mock cheep.",
+                    TimeStamp = DateTime.UtcNow.AddMinutes(-10)
+                },
+                new Cheep
+                {
+                    Author = author1,
+                    Text = "This is another cheep from Author1.",
+                    TimeStamp = DateTime.UtcNow.AddMinutes(-5)
+                },
+                new Cheep
+                {
+                    Author = author2,
+                    Text = "Author2's first cheep is here!",
+                    TimeStamp = DateTime.UtcNow
+                }
+            });
+        }
+
         
-        return query.FirstOrDefaultAsync()!;
-    }
-    
-    public Task<Author> GetAuthorByEmail(string email)
-    {
-        var query = (from author in _context.Authors where author.Email == email select author);
         
-        return query.FirstOrDefaultAsync()!;
-    }
-    
-    
-    public async Task CreateCheep(Cheep newCheep)
-    {
-        _context.Add(newCheep);
-        await _context.SaveChangesAsync();;
-    }
-    public async Task CreateAuthor(Author newAuthor)
-    {
-        _context.Add(newAuthor);
-        await _context.SaveChangesAsync();
-    }
+        
+        
+        
 
-    public Task<List<CheepDTO>> ReadCheepDTO(int page)
-    {
-    {
-        var query = (from cheep in _context.Cheeps
-                orderby cheep.TimeStamp descending
-                select new CheepDTO(){Text = cheep.Text, Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds, Author = cheep.Author.Name})
-            //.Include(c => c.Author)
-            .Skip((page - 1) * cheepsPerPage)
-            .Take(cheepsPerPage);
-        return query.ToListAsync();
-    }    }
+        
+        
+        
+        
+        
 
-   /* public Task UpdateCheep(CheepDTO alteredCheep)
-    {
-        throw new NotImplementedException();
-    }*/
-    
-    public Task<List<CheepDTO>> ReadCheepDTOFromAuthor(int page, string authorName)
-    {
-        var query = (from cheep in _context.Cheeps
-                where cheep.Author.Name == authorName
-                orderby cheep.TimeStamp descending
-                select new CheepDTO(){Text = cheep.Text, Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds, Author = cheep.Author.Name})
-            //.Include(c => c.Author)
-            .Skip((page - 1) * cheepsPerPage)
-            .Take(cheepsPerPage);
-        return query.ToListAsync();
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
     }
-}
 }
