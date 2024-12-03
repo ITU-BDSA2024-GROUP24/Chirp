@@ -48,11 +48,11 @@ namespace Chirp.Infrastructure.Test.Mock
             });
         }
 
-        
-        
-        
-        
-        
+        public Task CreateCheep(Cheep newCheep)
+        {
+            _cheeps.Add(newCheep);
+            return Task.CompletedTask;
+        }
 
         
         
