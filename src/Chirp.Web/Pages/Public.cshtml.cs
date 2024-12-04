@@ -48,7 +48,7 @@ public class PublicModel : PageModel
         else
         {
             Author author = await _service.GetAuthorByName(User.Identity.Name);
-            if( author != null)
+            if( author == null)
             {
                 return RedirectToPage("Public");
             }
