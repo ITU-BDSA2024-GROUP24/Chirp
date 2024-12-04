@@ -19,7 +19,7 @@ public class PublicModel : PageModel
     public List<CheepViewModel> Cheeps { get; set; }  = new List<CheepViewModel>();
 
     [BindProperty] 
-    public CheepFormatMessage Input { get; set; } = new();
+    public string? Message { get; set; }
     
     public PublicModel(ICheepService service, SignInManager<Author> signInManager)
     {
@@ -43,19 +43,18 @@ public class PublicModel : PageModel
     {
         if (!ModelState.IsValid)
         {
-            //missing query
-            return Page();
+            return NotFound();
         }
         else
         {
-            Author ? author = await _signInManager.UserManager.GetUserAsync(User);
+            Author author = await _service.GetAuthorByName(User.Identity.Name);
             if( author == null)
             {
-                return Forbid("Please sign in");
+                return Forbid("User not found");
             }
-            _service.AddCheep(author, Input.Message ?? throw new NullReferenceException());
+            await _service.AddCheep(author, Message ?? throw new NullReferenceException());
         }
         // missing query 
-        return RedirectToPage("page=1");
+        return RedirectToPage("Public");
     }
 }

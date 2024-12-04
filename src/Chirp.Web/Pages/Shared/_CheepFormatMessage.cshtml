@@ -1,15 +1,15 @@
 @using Chirp.Core
 @using Chirp.Web.Pages.Shared
 @using Microsoft.AspNetCore.Mvc.TagHelpers
-@inject SignInManager<Author> SignInManger
+@inject SignInManager<Author> SignInManager
 @model Chirp.Web.Pages.Shared.CheepFormatMessage
 
-@if (SignInManger.IsSignedIn(User))
+@if (SignInManager.IsSignedIn(User))
 {
     <div>class="CheepMessageField"
         <h3> Hello @(User.Identity!.Name), what do you want to share today?:))</h3>
-        <form method="post" action="/submit">
-            <!-- <input type="text" name="Message" value=" "/> -->
+        <form method="post">
+            <input type="text" name="Message" value=" "/>
             <input style="float: right " type="text" asp-for="Message"/>
             <input type="submit" value="Post"/>
         </form>

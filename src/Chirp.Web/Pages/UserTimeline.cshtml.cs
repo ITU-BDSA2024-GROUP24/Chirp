@@ -12,34 +12,32 @@ public class UserTimelineModel : PageModel
     private readonly SignInManager<Author> _signInManager;
     required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
 
-    [BindProperty] public CheepFormatMessage Input { get; set; } = new();
-
     public UserTimelineModel(ICheepService service, SignInManager<Author> signInManager)
     {
         _signInManager = signInManager;
         _service = service;
     }
-
+    
+    [BindProperty]
+    public string Message { get; set; }
+    
+    
     public async Task<IActionResult> OnPostAsync()
     {
-        if (!ModelState.IsValid)
+        if (!User.Identity!.IsAuthenticated)
         {
-            //missing query
-            return Page();
+            return NotFound();
         }
-        else
+        
+        Author? author = await _service.GetAuthorByName(User.Identity.Name);
+        if (author == null)
         {
-            Author? author = await _signInManager.UserManager.GetUserAsync(User);
-            if (author == null)
-            {
-                return Forbid("Please sign in");
-            }
-
-            _service.AddCheep(author, Input.Message ?? throw new NullReferenceException());
+            return Forbid("User not found");
         }
 
-        // missing query 
-        return RedirectToPage("page=1");
+        await _service.AddCheep(author, Message ?? throw new NullReferenceException());
+
+        return RedirectToPage("UserTimeline");
     }
 
 
