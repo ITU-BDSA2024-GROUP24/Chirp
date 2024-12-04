@@ -9,7 +9,10 @@ public interface ICheepService
 {
     List<CheepViewModel> GetCheeps(int page);
     List<CheepViewModel> GetCheepsFromAuthor(int page, string author);
-
+    Task AddCheep(Author author, string text);
+    Task<Author> GetAuthorByName(string name);
+    Task<Author> GetAuthorByEmail(string email);
+    Task AddAuthor(Author author);
 }
 
 public class CheepService : ICheepService
@@ -23,15 +26,15 @@ public class CheepService : ICheepService
     public List<CheepViewModel> GetCheeps(int page)
     {
         List<CheepDTO> cheepDTOs = _repository.ReadCheepDTO(page).Result;
-        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
-        return result;  // Call instance method
+        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author.UserName, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
+        return result;  
     }
 
     public List<CheepViewModel> GetCheepsFromAuthor(int page, string author)
     {
         List<CheepDTO> cheepDTOs = _repository.ReadCheepDTOFromAuthor(page, author).Result;
-        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
-        return result;  // Call instance method
+        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep => new CheepViewModel(cheep.Author.UserName, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
+        return result; 
     }
     private string UnixTimeStampToDateTimeString(long unixTimeStamp)
     {
@@ -40,26 +43,31 @@ public class CheepService : ICheepService
         return dateTime.ToString("MM/dd/yy H:mm:ss");
     }
     
-    public Author GetAuthorByName(string name)
+    public async Task<Author> GetAuthorByName(string name)
     {
-        Author author = _repository.GetAuthorByName(name).Result;
-        return author;
+        return await _repository.GetAuthorByName(name);
     }
     
-    public Author GetAuthorByEmail(string email)
+    public async Task<Author> GetAuthorByEmail(string email)
     {
-        Author author = _repository.GetAuthorByName(email).Result;
-        return author;
+        return await _repository.GetAuthorByEmail(email);
     }
 
-    public void AddCheep(Cheep cheep)
+    public async Task AddCheep(Author author, string text)
     {
-        _repository.CreateCheep(cheep);
+        Cheep cheep = new()
+        {
+            Author = author,
+            Text = text,
+            TimeStamp = DateTime.Now
+
+        };
+        await _repository.CreateCheep(cheep);
+
     }
 
-    public void AddAuthor(Author author)
+    public async Task AddAuthor(Author author)
     {
-        _repository.CreateAuthor(author);
-
+        await _repository.CreateAuthor(author);
     }
 }

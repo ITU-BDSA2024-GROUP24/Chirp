@@ -1,11 +1,12 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Chirp.Core;
 
 public class Cheep
 {
-    [Required]
-    public required int CheepId { get; set; }
+    [Key]
+    public  int CheepId { get; set; }
     
     
     [Required]
