@@ -32,7 +32,7 @@ public class UserTimelineModel : PageModel
         Author? author = await _service.GetAuthorByName(User.Identity.Name);
         if (author == null)
         {
-            return Forbid("User not found");
+            return RedirectToPage("UserTimeline");
         }
 
         await _service.AddCheep(author, Message ?? throw new NullReferenceException());

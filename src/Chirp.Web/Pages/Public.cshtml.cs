@@ -48,9 +48,9 @@ public class PublicModel : PageModel
         else
         {
             Author author = await _service.GetAuthorByName(User.Identity.Name);
-            if( author == null)
+            if( author != null)
             {
-                return Forbid("User not found");
+                return RedirectToPage("Public");
             }
             await _service.AddCheep(author, Message ?? throw new NullReferenceException());
         }
