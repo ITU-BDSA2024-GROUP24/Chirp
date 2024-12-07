@@ -12,7 +12,7 @@ public interface IFollowerRepository {
     
     public Task Getsfollowed(string followUser);
     
-    public Task RemoveFollower(string followerUser, string followedUser);
+    public Task UnFollow(string followerUser, string followedUser);
     
     
 }
@@ -29,20 +29,28 @@ public class FollowerRepository : IFollowerRepository
 
     public async Task AddFollower(string followerUser, string followedUser)
     {
+       /* var follow = _context.Followers.FirstOrDefault(follow => follow.Follower == followerUser && follow.Followed == followedUser);
+        }
+        /*var newFollow = new Follow(){
+            Follower = followerUser,
+            Followed = followedUser
+        };
+        await _context.Followers.AddAsync(newFollow);
+        await _context.SaveChangesAsync();*/
       
     }
 
 
-    public Task GetFollowers(string followerUser)
+    public async Task GetFollowers(string followerUser)
     {
         
     }
 
-    public Task Getsfollowed(string followUser)
+    public async Task Getsfollowed(string followUser)
     {
     }
 
-    public Task RemoveFollower(string followerUser, string followedUser)
+    public async Task UnFollow(string followerUser, string followedUser)
     {
         
     }
