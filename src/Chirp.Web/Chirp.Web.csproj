@@ -22,6 +22,7 @@
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
           <PrivateAssets>all</PrivateAssets>
         </PackageReference>
+        <PackageReference Include="Microsoft.Playwright.NUnit" Version="1.49.0" />
         <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
         <PackageReference Include="xunit" Version="2.9.2" />
         <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
