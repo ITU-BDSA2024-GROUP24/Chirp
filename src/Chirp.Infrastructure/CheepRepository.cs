@@ -79,4 +79,11 @@ public class CheepRepository : ICheepRepository
             .Take(cheepsPerPage);
         return query.ToListAsync();
     }
+    
+    
+    public async Task AddFollower(string followerUser, string followedUser)
+    {
+      
+    }
+    
 }

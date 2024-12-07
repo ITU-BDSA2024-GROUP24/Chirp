@@ -13,6 +13,7 @@ public interface ICheepService
     Task<Author> GetAuthorByName(string name);
     Task<Author> GetAuthorByEmail(string email);
     Task AddAuthor(Author author);
+    Task AddFollower(string followerUser, string followedUser);
 }
 
 public class CheepService : ICheepService
@@ -68,5 +69,10 @@ public class CheepService : ICheepService
     public async Task AddAuthor(Author author)
     {
         await _repository.CreateAuthor(author);
+    }
+
+
+    public async Task AddFollower(string followerUser, string followedUser)
+    {
     }
 }
