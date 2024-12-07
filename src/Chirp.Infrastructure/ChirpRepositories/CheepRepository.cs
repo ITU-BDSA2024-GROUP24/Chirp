@@ -82,9 +82,6 @@ public class CheepRepository : ICheepRepository
     }
     
     
-    public async Task AddFollower(string followerUser, string followedUser)
-    {
-      
-    }
+    
     
 }
