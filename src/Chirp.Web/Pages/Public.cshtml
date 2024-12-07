@@ -14,8 +14,8 @@
     {
         <div class="CheepMessageField">
             <h3>Hello, @(User.Identity!.Name)! What do you want to share today?</h3>
-            <form method="post" action="/">
-                <input type="text" asp-for="Input.Message" placeholder="Write your cheep..." />
+            <form method="post">
+                <input type="text" asp-for="Message" placeholder="Write your cheep..." />
                 <button type="submit">Post</button>
             </form>
         </div>
