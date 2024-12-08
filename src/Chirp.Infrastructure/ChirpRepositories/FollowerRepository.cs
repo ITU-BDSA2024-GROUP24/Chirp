@@ -50,7 +50,11 @@ public class FollowerRepository : IFollowerRepository
 
     public async Task<List<FollowerDTO>> GetFollowers(string followerUser)
     {
-       
+        var query = (from follower in _context.Followers
+            where follower.followed == followerUser
+            select follower);
+        var result = await query.ToListAsync();
+        return result;
     }
 
     public async Task<List<FollowerDTO>> Getsfollowed(string followedUser)
