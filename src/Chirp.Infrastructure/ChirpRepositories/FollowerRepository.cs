@@ -59,7 +59,11 @@ public class FollowerRepository : IFollowerRepository
 
     public async Task<List<FollowerDTO>> Getsfollowed(string followedUser)
     {
-        
+        var query = (from follow in _context.Followers
+            where follow.followed == followedUser
+            select follow);
+        var result = await query.ToListAsync();
+        return result;
     }
 
     public async Task UnFollow(string followerUser, string followedUser)
