@@ -7,8 +7,17 @@
     Layout = "Shared/_Layout";
 }
 
+
+
 <div>
     <h2> Public Timeline </h2>
+
+    <style>
+        .text-danger {
+            color: red;
+            font-size: 0.9rem;
+        }
+    </style>
 
     @if (User.Identity.IsAuthenticated)
     {
@@ -17,6 +26,7 @@
             <form method="post">
                 <input type="text" asp-for="Message" placeholder="Write your cheep..." />
                 <button type="submit">Post</button>
+                <span asp-validation-for="Message" class="text-danger"></span>
             </form>
         </div>
     }
