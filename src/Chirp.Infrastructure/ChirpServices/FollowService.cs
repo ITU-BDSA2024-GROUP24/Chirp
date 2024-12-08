@@ -15,5 +15,12 @@ public interface IFollowService
 
 public class FollowService : IFollowService
 {
+    public Task<List<FollowerDTO>> GetFollowers(string followerUser)
+    {
+        throw new NotImplementedException();
+    }
+
+  
+
     
 }
