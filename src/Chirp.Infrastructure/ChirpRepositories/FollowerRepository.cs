@@ -70,7 +70,11 @@ public class FollowerRepository : IFollowerRepository
     {
         var following = _context.Followers.FirstOrDefault(following => following.followedBy == followerUser && following.followThem == followedUser);
 
-       
+        if (following != null)
+        {
+            _context.Followers.Remove(following);
+            await _context.SaveChangesAsync();
+        }
     }
     
 
