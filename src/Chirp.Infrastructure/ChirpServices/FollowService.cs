@@ -13,3 +13,7 @@ public interface IFollowService
     
 }
 
+public class FollowService : IFollowService
+{
+    
+}
