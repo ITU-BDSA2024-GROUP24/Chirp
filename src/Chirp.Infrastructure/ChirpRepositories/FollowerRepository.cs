@@ -1,5 +1,6 @@
 using Chirp.Core;
-
+using Microsoft.EntityFrameworkCore;
+    
 namespace Chirp.Infrastructure.ChirpRepositories;
 
 
@@ -8,9 +9,9 @@ namespace Chirp.Infrastructure.ChirpRepositories;
 public interface IFollowerRepository { 
     public Task AddFollower(string followerUser, string followedUser);
     
-    public Task GetFollowers(string followerUser);
+    public Task<List<FollowerDTO>> GetFollowers(string followerUser);
     
-    public Task Getsfollowed(string followUser);
+    public Task<List<FollowerDTO>> Getsfollowed(string followedUser);
     
     public Task UnFollow(string followerUser, string followedUser);
     
@@ -29,32 +30,40 @@ public class FollowerRepository : IFollowerRepository
 
     public async Task AddFollower(string followerUser, string followedUser)
     {
-       /* var follow = _context.Followers.FirstOrDefault(follow => follow.Follower == followerUser && follow.Followed == followedUser);
-        }
-        /*var newFollow = new Follow(){
-            Follower = followerUser,
-            Followed = followedUser
-        };
-        await _context.Followers.AddAsync(newFollow);
-        await _context.SaveChangesAsync();*/
+        var following = _context.Followers.FirstOrDefault(following => following.followedBy == followedUser && following.followThem == followerUser);
+       if (following != null)
+       {
+           return;
+       }
+
+       var newFollowing = new Following()
+       {
+           FollowThem = followedUser,
+           FollowedBy = followerUser
+       };
+       
+        await _context.Followers.AddAsync(newFollowing);
+        await _context.SaveChangesAsync();
       
     }
 
 
-    public async Task GetFollowers(string followerUser)
+    public async Task<List<FollowerDTO>> GetFollowers(string followerUser)
     {
-        
+       
     }
 
-    public async Task Getsfollowed(string followUser)
+    public async Task<List<FollowerDTO>> Getsfollowed(string followedUser)
     {
+        
     }
 
     public async Task UnFollow(string followerUser, string followedUser)
     {
-        
+        var following = _context.Followers.FirstOrDefault(following => following.followedBy == followerUser && following.followThem == followedUser);
+
+       
     }
-
-
+    
 
 }
