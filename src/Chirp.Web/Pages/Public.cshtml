@@ -24,9 +24,9 @@
         <div class="CheepMessageField">
             <h3>Hello, @(User.Identity!.Name)! What do you want to share today?</h3>
             <form method="post">
-                <input type="text" asp-for="Message" placeholder="Write your cheep..." />
+                <input type="text" asp-for="CheepMessage.Message" placeholder="Write your cheep..." />
                 <button type="submit">Post</button>
-                <span asp-validation-for="Message" class="text-danger"></span>
+                <span asp-validation-for="CheepMessage.Message" class="text-danger"></span>
             </form>
         </div>
     }

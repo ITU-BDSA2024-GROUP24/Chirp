@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Chirp.Core;
+using Chirp.Web.Pages.Shared;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -12,13 +13,10 @@ public class PublicModel : PageModel
     private readonly SignInManager<Author> _signInManager;
 
     public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
-
-    [Required]
-    [StringLength(160, ErrorMessage = "Maximum length is 160 characters.")]
-    [MinLength(1, ErrorMessage = "Cheep must be at least 1 characters long.")]
-    [Display(Name = "Cheep")]
     [BindProperty]
-    public string? Message { get; set; }
+    
+    public CheepFormatMessage CheepMessage { get; set; } = new CheepFormatMessage();
+
 
     public PublicModel(ICheepService service, SignInManager<Author> signInManager)
     {
@@ -39,7 +37,7 @@ public class PublicModel : PageModel
 
     public async Task<IActionResult> OnPostAsync()
     {
-        if (string.IsNullOrWhiteSpace(Message))
+        if (string.IsNullOrWhiteSpace(CheepMessage.Message))
         {
             ModelState.AddModelError("Message", "Cheep cannot be empty.");
             return Page();
@@ -61,7 +59,7 @@ public class PublicModel : PageModel
             return Page();
         }
 
-        await _service.AddCheep(author, Message!);
+        await _service.AddCheep(author, CheepMessage.Message);
         return RedirectToPage("Public", new { page = Request.Query["page"] });
     }
 }
