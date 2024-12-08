@@ -15,7 +15,7 @@ public class PublicModel : PageModel
 
     [Required]
     [StringLength(160, ErrorMessage = "Maximum length is 160 characters.")]
-    [MinLength(2, ErrorMessage = "Cheep must be at least 2 characters long.")]
+    [MinLength(1, ErrorMessage = "Cheep must be at least 1 characters long.")]
     [Display(Name = "Cheep")]
     [BindProperty]
     public string? Message { get; set; }
