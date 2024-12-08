@@ -20,7 +20,10 @@ public class FollowService : IFollowService
         throw new NotImplementedException();
     }
 
-  
+    public Task AddFollower(string followerUser, string followedUser)
+    {
+        throw new NotImplementedException();
+    }
 
     
 }
