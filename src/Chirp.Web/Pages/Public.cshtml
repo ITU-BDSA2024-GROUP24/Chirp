@@ -1,5 +1,4 @@
 ﻿@page "/"
-@using Microsoft.EntityFrameworkCore
 @model Chirp.Web.Pages.PublicModel
 
 @{
@@ -19,7 +18,7 @@
         }
     </style>
 
-    @if (User.Identity.IsAuthenticated)
+    @if (User.Identity is { IsAuthenticated: true })
     {
         <div class="CheepMessageField">
             <h3>Hello, @(User.Identity!.Name)! What do you want to share today?</h3>
