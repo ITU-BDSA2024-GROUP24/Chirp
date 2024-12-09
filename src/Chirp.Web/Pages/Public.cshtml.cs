@@ -20,7 +20,8 @@ public class PublicModel : PageModel
 
     [BindProperty] 
     public string? Message { get; set; }
-    
+    public CheepFormatMessage CheepMessage { get; set; } = new CheepFormatMessage();
+
     public PublicModel(ICheepService service, SignInManager<Author> signInManager)
     {
         _service = service;
