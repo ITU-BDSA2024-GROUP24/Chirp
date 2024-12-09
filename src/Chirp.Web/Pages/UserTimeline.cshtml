@@ -46,5 +46,54 @@
     {
         <em>There are no cheeps so far.</em>
     }
+
+    <hr />
+
+    <h3>Your Followers</h3>
+    @if (Model.Followers.Any())
+    {
+    <ul>
+        @foreach (var follower in Model.Followers)
+        {
+        <li>@follower.Followers</li>
+        }
+    </ul>
+    }
+    else
+    {
+    <p>You have no followers yet.</p>
+    }
+    <h3>Users You Follow</h3>
+    @if (Model.Following.Any())
+    {
+    <ul>
+        @foreach (var following in Model.Following)
+        {
+        <li>
+            @following.Followers
+            <form method="post" asp-page-handler="Unfollow">
+                <input type="hidden" name="FollowedUser" value="@following.Followers" />
+                <button type="submit">Unfollow</button>
+            </form>
+        </li>
+        }
+    </ul>
+    }
+    else
+    {
+    <p>You are not following anyone yet.</p>
+    }
+
+    <hr />
+
+    @if (User.Identity.IsAuthenticated)
+    {
+    <h3>Follow a User</h3>
+    <form method="post" asp-page-handler="Follow">
+        <input type="text" name="FollowedUser" asp-for="FollowedUser" placeholder="Enter username to follow" required />
+        <button type="submit">Follow</button>
+    </form>
+    }
+    }
     
 </div>

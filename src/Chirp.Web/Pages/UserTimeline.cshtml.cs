@@ -63,21 +63,22 @@ public class UserTimelineModel : PageModel
         {
             return Redirect($"{Request.Path}?page=1");
         }
-        Cheeps = _service.GetCheepsFromAuthor(page, author);
+        Cheeps = _service.GetCheepsFromAuthor(page, author) ?? new List<CheepViewModel>();
+
         
         if (User.Identity!.IsAuthenticated)
         {
             Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
             if (loggedInUser != null)
             {
-                Followers = await _followService.GetFollowers(loggedInUser.UserName); 
-                Following = await _followService.GetsFollowed(loggedInUser.UserName);
+                Followers = await _followService.GetFollowers(loggedInUser.UserName)?? new List<FollowerDTO>();
+                Following = await _followService.GetsFollowed(loggedInUser.UserName)?? new List<FollowerDTO>();
             }
         }
 
         return Page();
     }
-    
+
     public async Task<IActionResult> OnPostFollowAsync()
     {
         if (!User.Identity!.IsAuthenticated)
@@ -91,8 +92,18 @@ public class UserTimelineModel : PageModel
             return RedirectToPage("UserTimeline");
         }
 
+
+
+        var existingFollowers = await _followService.GetFollowers(loggedInUser.UserName);
+        if (existingFollowers.Any(f => f.Followers == FollowedUser))
+        {
+            TempData["Message"] = $"You are already following {FollowedUser}.";
+            return RedirectToPage("UserTimeline");
+        }
+
         await _followService.AddFollower(loggedInUser.UserName, FollowedUser);
-        return RedirectToPage("UserTimeline", new { author = FollowedUser });
+        TempData["Message"] = $"You are now following {FollowedUser}!";
+        return RedirectToPage("UserTimeline");
     }
 
     public async Task<IActionResult> OnPostUnfollowAsync()
