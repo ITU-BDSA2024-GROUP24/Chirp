@@ -1,32 +1,34 @@
 using Chirp.Core;
 using Chirp.Infrastructure.ChirpRepositories;
 
-namespace Chirp.Infrastructure.ChirpServices;
+
 
 public interface IFollowService
 {
-    public Task<List<FollowerDTO>> GetFollowers(string followerUser);
-    
-    public Task AddFollower(string followerUser, string followedUser);
-    
-    public Task Unfollow(string followerUser, string followedUser);
     
 }
 
 public class FollowService : IFollowService
 {
-    public Task<List<FollowerDTO>> GetFollowers(string followerUser)
+    private readonly IFollowerRepository _followerRepository;
+
+    public FollowService(IFollowerRepository followerRepository)
     {
-        throw new NotImplementedException();
+        _followerRepository = followerRepository;
     }
 
-    public Task AddFollower(string followerUser, string followedUser)
+    public async Task<List<FollowerDTO>> GetFollowers(string followerUser)
     {
-        throw new NotImplementedException();
+        return await _followerRepository.GetFollowers(followerUser);
     }
 
-    public Task Unfollow(string followerUser, string followedUser)
+    public async Task AddFollower(string followerUser, string followedUser)
     {
-        throw new NotImplementedException();
+        await _followerRepository.AddFollower(followerUser, followedUser);
+    }
+
+    public async Task Unfollow(string followerUser, string followedUser)
+    {
+        await _followerRepository.UnFollow(followerUser, followedUser);
     }
 }
