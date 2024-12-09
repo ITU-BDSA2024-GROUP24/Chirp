@@ -1,6 +1,6 @@
 ﻿
 using Chirp.Core;
-using Chirp.Infrastructure;
+using Chirp.Infrastructure.ChirpServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
