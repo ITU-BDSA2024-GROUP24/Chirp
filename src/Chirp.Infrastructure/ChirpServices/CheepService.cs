@@ -2,7 +2,7 @@ using Chirp.Core;
 using Chirp.Infrastructure.ChirpRepositories;
 using Author = Chirp.Core.Author;
 
-namespace Chirp.Infrastructure;
+namespace Chirp.Infrastructure.ChirpServices;
 public record CheepViewModel(string Author, string Message, string Timestamp);
 
 public interface ICheepService
