@@ -1,6 +1,7 @@
 using Chirp.Core;
 using Chirp.Infrastructure;
 using Chirp.Infrastructure.ChirpRepositories;
+using Chirp.Infrastructure.ChirpServices;
 using Chirp.Razor;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
