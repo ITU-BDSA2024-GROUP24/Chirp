@@ -1,4 +1,7 @@
-namespace PlaywrightTests;
+using NUnit.Framework;
+
+namespace Chirp.Web.PlaywrightTests;
+
 
 public class Tests
 {
