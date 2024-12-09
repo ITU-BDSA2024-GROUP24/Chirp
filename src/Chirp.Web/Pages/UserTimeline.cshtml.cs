@@ -1,4 +1,5 @@
 ﻿using Chirp.Core;
+using Chirp.Infrastructure.ChirpServices;
 using Chirp.Web.Pages.Shared;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -10,16 +11,30 @@ public class UserTimelineModel : PageModel
 {
     private readonly ICheepService _service;
     private readonly SignInManager<Author> _signInManager;
+    private readonly IFollowService _followService; 
     required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
 
-    public UserTimelineModel(ICheepService service, SignInManager<Author> signInManager)
+    public List<FollowerDTO> Followers { get; set; } = new List<FollowerDTO>();
+    public List<FollowerDTO> Following { get; set; } = new List<FollowerDTO>();
+
+    public UserTimelineModel(ICheepService service, SignInManager<Author> signInManager, IFollowService followService)
     {
         _signInManager = signInManager;
         _service = service;
+        _followService = followService;
+        
     }
     
     [BindProperty]
     public string Message { get; set; }
+    
+    [BindProperty]
+    public string FollowedUser { get; set; }
+    
+    [BindProperty]
+    public string FollowerUser { get; set; }
+    
+    
     
     
     public async Task<IActionResult> OnPostAsync()
@@ -42,15 +57,59 @@ public class UserTimelineModel : PageModel
 
 
 
-    public ActionResult OnGet(string author, [FromQuery] int page)
+    public async Task<IActionResult> OnGetAsync(string author, [FromQuery] int page)
     {
         if (page < 1)
         {
             return Redirect($"{Request.Path}?page=1");
         }
         Cheeps = _service.GetCheepsFromAuthor(page, author);
+        
+        if (User.Identity!.IsAuthenticated)
+        {
+            Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
+            if (loggedInUser != null)
+            {
+                Followers = await _followService.GetFollowers(loggedInUser.UserName); 
+                Following = await _followService.GetsFollowed(loggedInUser.UserName);
+            }
+        }
 
         return Page();
+    }
+    
+    public async Task<IActionResult> OnPostFollowAsync()
+    {
+        if (!User.Identity!.IsAuthenticated)
+        {
+            return NotFound();
+        }
+
+        Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
+        if (loggedInUser == null || string.IsNullOrEmpty(FollowedUser))
+        {
+            return RedirectToPage("UserTimeline");
+        }
+
+        await _followService.AddFollower(loggedInUser.UserName, FollowedUser);
+        return RedirectToPage("UserTimeline", new { author = FollowedUser });
+    }
+
+    public async Task<IActionResult> OnPostUnfollowAsync()
+    {
+        if (!User.Identity!.IsAuthenticated)
+        {
+            return NotFound();
+        }
+
+        Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
+        if (loggedInUser == null || string.IsNullOrEmpty(FollowedUser))
+        {
+            return RedirectToPage("UserTimeline");
+        }
+
+        await _followService.Unfollow(loggedInUser.UserName, FollowedUser);
+        return RedirectToPage("UserTimeline", new { author = FollowedUser });
     }
 }
 
