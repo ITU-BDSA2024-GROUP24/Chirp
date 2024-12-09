@@ -11,7 +11,7 @@ public interface IFollowerRepository {
     
     public Task<List<FollowerDTO>> GetFollowers(string followerUser);
     
-    public Task<List<FollowerDTO>> Getsfollowed(string followedUser);
+    public Task<List<FollowerDTO>> GetsFollowed(string followedUser);
     
     public Task UnFollow(string followerUser, string followedUser);
     
@@ -30,52 +30,59 @@ public class FollowerRepository : IFollowerRepository
 
     public async Task AddFollower(string followerUser, string followedUser)
     {
-        var following = _context.Followers.FirstOrDefault(following => following.followedBy == followedUser && following.followThem == followerUser);
-       if (following != null)
-       {
-           return;
-       }
+        var AlreadyAFollower = _context.Followers.FirstOrDefault(f =>
+            f.FollowedBy == followerUser && f.FollowThem == followedUser);
 
-       var newFollowing = new Following()
-       {
-           FollowThem = followedUser,
-           FollowedBy = followerUser
-       };
-       
+        if (AlreadyAFollower != null)
+        {
+            return;
+        }
+
+        var newFollowing = new Following
+        {
+            FollowThem = followedUser,
+            FollowedBy = followerUser
+        };
+
         await _context.Followers.AddAsync(newFollowing);
         await _context.SaveChangesAsync();
-      
     }
-
 
     public async Task<List<FollowerDTO>> GetFollowers(string followerUser)
     {
-        var query = (from follower in _context.Followers
-            where follower.followed == followerUser
-            select follower);
-        var result = await query.ToListAsync();
-        return result;
+        var query = from follower in _context.Followers
+            where follower.FollowThem == followerUser
+            select new FollowerDTO
+            {
+                Followers = follower.FollowedBy
+            };
+
+        return await query.ToListAsync();
     }
 
-    public async Task<List<FollowerDTO>> Getsfollowed(string followedUser)
+    public async Task<List<FollowerDTO>> GetsFollowed(string followedUser)
     {
-        var query = (from follow in _context.Followers
-            where follow.followed == followedUser
-            select follow);
-        var result = await query.ToListAsync();
-        return result;
+        var query = from follow in _context.Followers
+            where follow.FollowedBy == followedUser
+            select new FollowerDTO
+            {
+                Followers = follow.FollowThem
+            };
+
+        return await query.ToListAsync();
     }
 
     public async Task UnFollow(string followerUser, string followedUser)
     {
-        var following = _context.Followers.FirstOrDefault(following => following.followedBy == followerUser && following.followThem == followedUser);
+        var existingFollowing = _context.Followers.FirstOrDefault(f =>
+            f.FollowedBy == followerUser && f.FollowThem == followedUser);
 
-        if (following != null)
+        if (existingFollowing != null)
         {
-            _context.Followers.Remove(following);
+            _context.Followers.Remove(existingFollowing);
             await _context.SaveChangesAsync();
         }
     }
-    
-
 }
+
+
