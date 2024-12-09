@@ -5,7 +5,13 @@ using Chirp.Infrastructure.ChirpRepositories;
 
 public interface IFollowService
 {
+    Task<List<FollowerDTO>> GetFollowers(string followerUser);
+    Task AddFollower(string followerUser, string followedUser);
+
+    Task Unfollow(string followerUser, string followedUser);
     
+    Task<List<FollowerDTO>> GetsFollowed(string followedUser);
+
 }
 
 public class FollowService : IFollowService
@@ -31,4 +37,10 @@ public class FollowService : IFollowService
     {
         await _followerRepository.UnFollow(followerUser, followedUser);
     }
+    
+    public async Task<List<FollowerDTO>> GetsFollowed(string followedUser)
+    {
+        return await _followerRepository.GetsFollowed(followedUser); 
+    }
+
 }
