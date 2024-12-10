@@ -39,10 +39,14 @@ public class Tests : PageTest
     }
 
     [Test]
-    public async Task StartpageHasButtens()
+    public async Task StartpageButtonsClicked()
     {
-        
+        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "login" }).ClickAsync();
     }
+    
     
     [Test]
     public async Task GoToUsertimeline()
