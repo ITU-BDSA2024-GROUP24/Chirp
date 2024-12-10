@@ -68,7 +68,8 @@ public class Tests : PageTest
     [Test]
     public async Task GoToLogin()
     {
-       
+        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GetByRole(AriaRole.Link, new() { Name = "login" }).ClickAsync();
     }
     
     [Test]
