@@ -35,7 +35,7 @@ public class Tests : PageTest
     [Test]
     public async Task OpenStartpage()
     {
-        
+        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
     }
 
     [Test]
