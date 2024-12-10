@@ -23,7 +23,6 @@ public class PublicModel : PageModel
     public List<FollowerDTO> Following { get; set; } = new List<FollowerDTO>();
 
     [BindProperty] 
-    public string? Message { get; set; }
     public CheepFormatMessage CheepMessage { get; set; } = new CheepFormatMessage();
 
     public PublicModel(ICheepService service, IFollowService followService, SignInManager<Author> signInManager)
@@ -66,7 +65,7 @@ public class PublicModel : PageModel
             {
                 return RedirectToPage("Public");
             }
-            await _service.AddCheep(author, Message ?? throw new NullReferenceException());
+            await _service.AddCheep(author, CheepMessage.Message  ?? throw new NullReferenceException());
         }
         return RedirectToPage("Public");
     }

@@ -83,17 +83,4 @@
     {
     <p>You are not following anyone yet.</p>
     }
-
-    <hr />
-
-    @if (User.Identity.IsAuthenticated)
-    {
-    <h3>Follow a User</h3>
-    <form method="post" asp-page-handler="Follow">
-        <input type="text" name="FollowedUser" asp-for="FollowedUser" placeholder="Enter username to follow" required />
-        <button type="submit">Follow</button>
-    </form>
-    }
-    
-    
 </div>
