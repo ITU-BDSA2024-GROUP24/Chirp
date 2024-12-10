@@ -49,7 +49,7 @@ public class Tests : PageTest
     
 
 
-  
+
 
     [Test]
     public async Task GoToRegister()
@@ -92,7 +92,28 @@ public class Tests : PageTest
     [Test]
     public async Task RegisterLoginGoToMytimeline()
     {
-        
+        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
+        await Page.GetByPlaceholder("Name", new() { Exact = true }).ClickAsync();
+        await Page.GetByPlaceholder("Name", new() { Exact = true }).FillAsync("Playwright");
+        await Page.GetByPlaceholder("Name", new() { Exact = true }).PressAsync("Tab");
+        await Page.GetByPlaceholder("name@example.com").FillAsync("p@p.p");
+        await Page.GetByPlaceholder("name@example.com").PressAsync("Tab");
+        await Page.GetByLabel("Password", new() { Exact = true }).FillAsync("Qwe123?");
+        await Page.GetByLabel("Password", new() { Exact = true }).PressAsync("Tab");
+        await Page.GetByLabel("Confirm Password").FillAsync("Qwe123?");
+        await Page.GetByRole(AriaRole.Button, new() { Name = "Register" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "Click here to confirm your" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "login" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "log in" }).ClickAsync();
+        await Page.GetByPlaceholder("password").ClickAsync();
+        await Page.GetByPlaceholder("password").FillAsync("Qwe123?");
+        await Page.GetByPlaceholder("name@example.com").ClickAsync();
+        await Page.GetByPlaceholder("name@example.com").FillAsync("p@p.p");
+        await Page.GetByRole(AriaRole.Button, new() { Name = "Log in" }).ClickAsync();
+        await Page.GetByRole(AriaRole.Link, new() { Name = "my timeline" }).ClickAsync();
     }
     
     [Test]
