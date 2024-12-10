@@ -1,19 +1,43 @@
-﻿@page
+﻿@page "/Aboutme/{author}"
 @model Chirp.Web.Pages.infopage
-
 @{
-    Layout = null;
+    ViewData["Title"] = "Chirp!";
+    Layout = "Shared/_Layout";
+    var routeName = HttpContext.GetRouteValue("author");
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title></title>
-</head>
-<body>
 <div>
+    <h2> About @routeName  </h2>
+
+    <button onclick="location.href='/identity/account/manage'">Manage Account</button> <button onclick="location.href='/identity/account/manage/PersonalData'">Delete Account</button>
+
+   
+    <h3>People you follow </h3>
+
+    <h3>Cheeps sent by you</h3>
+    @if (Model.Cheeps.Any())
+    {
+        <ul id="messagelist" class="cheeps">
+            @foreach (var cheep in Model.Cheeps)
+            {
+                <li>
+                    <p>
+                        <strong>
+                            <a href="/@cheep.Author">@cheep.Author</a>
+                        </strong>
+                        @cheep.Message
+                        <small>&mdash; @cheep.Timestamp</small>
+                    </p>
+                </li>
+            }
+        </ul>
+        
+    }
+    else
+    {
+        <em>you haven't posted any cheeps yet.</em>
+    }
     
+    
+     
 </div>
-</body>
-</html>
