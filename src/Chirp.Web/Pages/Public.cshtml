@@ -5,9 +5,6 @@
     ViewData["Title"] = "Chirp!";
     Layout = "Shared/_Layout";
 }
-
-
-
 <div>
     <h2> Public Timeline </h2>
 
@@ -47,6 +44,20 @@
                         @cheep.Message
                         <small>&mdash; @cheep.Timestamp</small>
                     </p>
+                    @if (User.Identity is { IsAuthenticated: true })
+                    {
+                        <form method="post" asp-page-handler="FollowUnfollow">
+                            <input type="hidden" name="followedUser" value="@cheep.Author" />
+                            @if (Model.Following.Any(f => f.Followers == cheep.Author)) // Check if already following
+                            {
+                                <button type="submit">Unfollow</button>
+                            }
+                            else
+                            {
+                                <button type="submit">Follow</button>
+                            }
+                        </form>
+                    }
                 </li>
             }
         </ul>
