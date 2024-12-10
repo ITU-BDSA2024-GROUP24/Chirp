@@ -42,34 +42,32 @@ public class Tests : PageTest
     public async Task StartpageButtonsClicked()
     {
         await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
-        await Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" }).ClickAsync();
-        await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
-        await Page.GetByRole(AriaRole.Link, new() { Name = "login" }).ClickAsync();
+        await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" })).ToBeVisibleAsync();
+        await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "register" })).ToBeVisibleAsync();
+        await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "login" })).ToBeVisibleAsync();
     }
     
-    
+
+
+  
+
     [Test]
-    public async Task GoToUsertimeline()
+    public async Task GoToRegister()
     {
         
     }
-    
+
     [Test]
     public async Task GoToTestPersonTimeline()
     {
         
     }
     
-    [Test]
-    public async Task GoToRegister()
-    {
-        
-    }
-    
+  
     [Test]
     public async Task GoToLogin()
     {
-        
+       
     }
     
     [Test]
