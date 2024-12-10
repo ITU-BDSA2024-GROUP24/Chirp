@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
-public class Tests : PageTest
+public class EndToEndTest: PageTest
 {
     [Test]
     public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntroPage()
@@ -39,7 +39,7 @@ public class Tests : PageTest
     }
 
     [Test]
-    public async Task StartpageButtonsClicked()
+    public async Task StartpageButtonsVisable()
     {
         await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
         await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" })).ToBeVisibleAsync();
