@@ -16,27 +16,38 @@ public class PublicModel : PageModel
     private readonly ICheepService _service;
     
     private readonly SignInManager<Author> _signInManager;
+    
+    private readonly IFollowService _followService;
+
     public List<CheepViewModel> Cheeps { get; set; }  = new List<CheepViewModel>();
+    public List<FollowerDTO> Following { get; set; } = new List<FollowerDTO>();
 
     [BindProperty] 
     public string? Message { get; set; }
     public CheepFormatMessage CheepMessage { get; set; } = new CheepFormatMessage();
 
-    public PublicModel(ICheepService service, SignInManager<Author> signInManager)
+    public PublicModel(ICheepService service, IFollowService followService, SignInManager<Author> signInManager)
     {
         _service = service;
+        _followService = followService;
         _signInManager = signInManager;
     }
 
-    public ActionResult OnGet([FromQuery] int page)
+    public async Task <ActionResult> OnGetAsync([FromQuery] int page)
     {
         if (page < 1)
         {
             return Redirect($"{Request.Path}?page=1");
         }
         
-
         Cheeps = _service.GetCheeps(page);
+
+        if (User.Identity.IsAuthenticated)
+        {
+            var loggedInUser = User.Identity.Name;
+            Following = await _followService.GetsFollowed(loggedInUser)?? new List<FollowerDTO>();
+        }
+
         return Page();
     }
 
