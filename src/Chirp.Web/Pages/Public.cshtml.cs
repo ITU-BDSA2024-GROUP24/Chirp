@@ -50,6 +50,8 @@ public class PublicModel : PageModel
 
         return Page();
     }
+    
+    
 
     public async Task<IActionResult> OnPostAsync()
     {
@@ -66,7 +68,29 @@ public class PublicModel : PageModel
             }
             await _service.AddCheep(author, Message ?? throw new NullReferenceException());
         }
-        // missing query 
         return RedirectToPage("Public");
+    }
+
+    public async Task<IActionResult> OnPostFollowAsync(string followedUser)
+    {
+        if (!User.Identity?.IsAuthenticated ?? true || string.IsNullOrEmpty(followedUser))
+        {
+            return RedirectToPage();
+        }
+        var loggedInUser = User.Identity.Name;
+
+        var existingFollowers = await _followService.GetFollowers(loggedInUser);
+        if (existingFollowers.Any(f => f.Followers == followedUser))
+        {
+            await _followService.Unfollow(loggedInUser, followedUser);
+            TempData["Message"] = $"You have unfollowed {followedUser}.";
+        }
+        else
+        {
+            await _followService.AddFollower(loggedInUser, followedUser);
+            TempData["Message"] = $"YAY! You are now following {followedUser} !";
+        }
+
+        return RedirectToPage();
     }
 }
