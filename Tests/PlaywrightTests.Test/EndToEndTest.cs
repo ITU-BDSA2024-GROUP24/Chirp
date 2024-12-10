@@ -1,5 +1,12 @@
 namespace PlaywrightTests.Test;
 
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using Microsoft.Playwright;
+using Microsoft.Playwright.NUnit;
+using NUnit.Framework;
+
+
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
 public class Tests : PageTest
@@ -24,4 +31,60 @@ public class Tests : PageTest
         // Expects the URL to contain intro.
         await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));
     }
+
+    [Test]
+    public async Task OpenStartpage()
+    {
+        
+    }
+
+    [Test]
+    public async Task StartpageHasButtens()
+    {
+        
+    }
+    
+    [Test]
+    public async Task GoToUsertimeline()
+    {
+        
+    }
+    
+    [Test]
+    public async Task GoToTestPersonTimeline()
+    {
+        
+    }
+    
+    [Test]
+    public async Task GoToRegister()
+    {
+        
+    }
+    
+    [Test]
+    public async Task GoToLogin()
+    {
+        
+    }
+    
+    [Test]
+    public async Task RegisterLoginGoToMytimeline()
+    {
+        
+    }
+    
+    [Test]
+    public async Task PostCheepOnMytimeline()
+    {
+        
+    }
+    
+    [Test]
+    public async Task RegisterLoginCheepLogout()
+    {
+        
+    }
+    
+    
 }
