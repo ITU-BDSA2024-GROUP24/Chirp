@@ -25,6 +25,19 @@
             background-color: #d4edda;
             border-color: #c3e6cb;
         }
+        fake-button {
+            display: inline-block;
+            padding: 7px 15px;
+            background: #90c2f9;
+            color: white;
+            border-radius: 2px;
+            font-size: 12px;
+            text-align: center;
+            cursor: not-allowed;
+        }
+        fake-button:hover {
+            background: #90c2f9;
+        }
     </style>
 
     
@@ -66,13 +79,13 @@
                     </p>
 
                     <!-- Follow/Unfollow buttons -->
-                    @if (User.Identity is { IsAuthenticated: true })
+                    @if (User.Identity is { IsAuthenticated: true } & User.Identity!.Name != cheep.Author)
                     {
                         <form method="post" asp-page-handler="Follow">
                             <input type="hidden" name="followedUser" value="@cheep.Author" />
                             @if (Model.Following.Any(f => f.Followers == cheep.Author)) // Check if already following
                             {
-                                <button type="submit">Following</button>
+                                <fake-button>Following</fake-button>
                             }
                             else
                             {
