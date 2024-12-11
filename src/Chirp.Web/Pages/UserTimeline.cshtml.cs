@@ -61,7 +61,7 @@ public class UserTimelineModel : PageModel
             return Redirect($"{Request.Path}?page=1");
         }
 
-        Cheeps = _service.GetCheepsFromAuthor(page, author ?? User.Identity.Name) ?? new List<CheepViewModel>();
+        Cheeps = _service.GetCheepsFromAuthor(page, author);
 
 
         if (User.Identity!.IsAuthenticated)

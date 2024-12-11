@@ -72,7 +72,7 @@
                             <input type="hidden" name="followedUser" value="@cheep.Author" />
                             @if (Model.Following.Any(f => f.Followers == cheep.Author)) // Check if already following
                             {
-                                <button type="submit">Unfollow</button>
+                                <button type="submit">Following</button>
                             }
                             else
                             {
