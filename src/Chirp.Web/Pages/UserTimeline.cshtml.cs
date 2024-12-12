@@ -60,8 +60,10 @@ public class UserTimelineModel : PageModel
         {
             return Redirect($"{Request.Path}?page=1");
         }
-        Cheeps = _service.GetCheepsFromAuthor(page, author);
-        Cheeps = _service.GetCheepsFromFollower(page,author);
+        Cheeps = _service.GetCheepsFromAuthor(page, author)
+            .Union(_service.GetCheepsFromFollower(page, author))
+            .ToList();
+
 
         if (User.Identity!.IsAuthenticated)
         {
