@@ -13,6 +13,7 @@ public interface ICheepRepository
     public Task UpdateCheep(CheepDTO alteredCheep);
     public Task<Core.Author> GetAuthorByName(string name);
     public Task<Core.Author> GetAuthorByEmail(string email);
-    
-    
+    public Task<List<Cheep>> ReadCheepFromFollowed(string authorName);
+    public Task<List<CheepDTO>> ReadCheepDTOFromFollowed(List<Cheep> cheeps);
+
 }                                   

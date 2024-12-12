@@ -1,6 +1,6 @@
 using Chirp.Core;
 using Chirp.Infrastructure.ChirpRepositories;
-
+using Chirp.Infrastructure.ChirpServices;
 
 
 public interface IFollowService
@@ -42,5 +42,6 @@ public class FollowService : IFollowService
     {
         return await _followerRepository.GetsFollowed(followedUser); 
     }
-
+    
+    
 }

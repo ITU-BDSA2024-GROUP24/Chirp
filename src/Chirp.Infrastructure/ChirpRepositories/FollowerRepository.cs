@@ -1,4 +1,5 @@
 using Chirp.Core;
+using Chirp.Infrastructure;
 using Microsoft.EntityFrameworkCore;
     
 namespace Chirp.Infrastructure.ChirpRepositories;
@@ -56,10 +57,10 @@ public class FollowerRepository : IFollowerRepository
             {
                 Followers = follower.FollowedBy
             };
-
-        return await query.ToListAsync();
+        var list = await query.ToListAsync();
+        return list;
     }
-
+   
     public async Task<List<FollowerDTO>> GetsFollowed(string followedUser)
     {
         var query = from follow in _context.Followers
@@ -68,9 +69,10 @@ public class FollowerRepository : IFollowerRepository
             {
                 Followers = follow.FollowThem
             };
-
-        return await query.ToListAsync();
+        var list = await query.ToListAsync();
+        return list;
     }
+    
 
     public async Task UnFollow(string followerUser, string followedUser)
     {
@@ -83,6 +85,8 @@ public class FollowerRepository : IFollowerRepository
             await _context.SaveChangesAsync();
         }
     }
+
+    
 }
 
 

@@ -60,9 +60,8 @@ public class UserTimelineModel : PageModel
         {
             return Redirect($"{Request.Path}?page=1");
         }
-
         Cheeps = _service.GetCheepsFromAuthor(page, author);
-
+        Cheeps = _service.GetCheepsFromFollower(page,author);
 
         if (User.Identity!.IsAuthenticated)
         {
@@ -72,10 +71,13 @@ public class UserTimelineModel : PageModel
                 Followers = await _followService.GetFollowers(loggedInUser.UserName) ?? new List<FollowerDTO>();
                 Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDTO>();
             }
+            
         }
 
         return Page();
     }
+  
+    
 
     public async Task<IActionResult> OnPostFollowAsync()
     {
