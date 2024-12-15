@@ -7,8 +7,10 @@ namespace Chirp.Core;
 public class Following
 
 {
-    public required string FollowThem { get; set; }
+    [MaxLength(160)]
+    public string? FollowThem { get; set; }
     
-    public required string FollowedBy { get; set; }
+    [MaxLength(160)]
+    public string? FollowedBy { get; set; }
 }
     
