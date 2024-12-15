@@ -1,6 +1,7 @@
 using Chirp.Core;
 using Chirp.Infrastructure.ChirpRepositories;
-using Chirp.Infrastructure.ChirpServices;
+
+namespace Chirp.Infrastructure.ChirpServices;
 
 
 public interface IFollowService
