@@ -1,6 +1,5 @@
 ﻿using Chirp.Core;
 using Chirp.Infrastructure.ChirpServices;
-using Chirp.Web.Pages.Shared;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -40,12 +39,20 @@ public class UserTimelineModel : PageModel
         {
             return NotFound();
         }
+        
+        if (string.IsNullOrWhiteSpace(Message))
+        {
+            ModelState.AddModelError("Message", "Cheep cannot be empty.");
+            return Page();
+        }
+        
 
         Author? author = await _service.GetAuthorByName(User.Identity.Name);
         if (author == null)
         {
             return RedirectToPage("UserTimeline");
         }
+        
 
         await _service.AddCheep(author, Message ?? throw new NullReferenceException());
 
