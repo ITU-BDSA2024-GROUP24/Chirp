@@ -1,5 +1,4 @@
 using Chirp.Core;
-using Chirp.Infrastructure;
 using Microsoft.EntityFrameworkCore;
     
 namespace Chirp.Infrastructure.ChirpRepositories;
@@ -31,10 +30,10 @@ public class FollowerRepository : IFollowerRepository
 
     public async Task AddFollower(string followerUser, string followedUser)
     {
-        var AlreadyAFollower = _context.Followers.FirstOrDefault(f =>
+        var alreadyAFollower = _context.Followers.FirstOrDefault(f =>
             f.FollowedBy == followerUser && f.FollowThem == followedUser);
 
-        if (AlreadyAFollower != null)
+        if (alreadyAFollower != null)
         {
             return;
         }
