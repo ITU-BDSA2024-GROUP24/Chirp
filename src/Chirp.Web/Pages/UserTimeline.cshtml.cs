@@ -128,6 +128,6 @@ public class UserTimelineModel : PageModel
         // Refresh the Following list
         Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDto>();
 
-        return RedirectToPage("UserTimeline", new { author = FollowedUser });
+        return RedirectToPage("UserTimeline");
     }
 }
