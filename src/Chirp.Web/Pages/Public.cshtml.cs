@@ -20,7 +20,7 @@ public class PublicModel : PageModel
     private readonly IFollowService _followService;
 
     public List<CheepViewModel> Cheeps { get; set; }  = new List<CheepViewModel>();
-    public List<FollowerDTO> Following { get; set; } = new List<FollowerDTO>();
+    public List<FollowerDto> Following { get; set; } = new List<FollowerDto>();
 
     [BindProperty] 
     public CheepFormatMessage CheepMessage { get; set; } = new CheepFormatMessage();
@@ -44,7 +44,7 @@ public class PublicModel : PageModel
         if (User.Identity.IsAuthenticated)
         {
             var loggedInUser = User.Identity.Name;
-            Following = await _followService.GetsFollowed(loggedInUser)?? new List<FollowerDTO>();
+            Following = await _followService.GetsFollowed(loggedInUser)?? new List<FollowerDto>();
         }
 
         return Page();

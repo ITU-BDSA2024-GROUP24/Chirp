@@ -10,9 +10,9 @@ namespace Chirp.Infrastructure.ChirpRepositories;
 public interface IFollowerRepository { 
     public Task AddFollower(string followerUser, string followedUser);
     
-    public Task<List<FollowerDTO>> GetFollowers(string followerUser);
+    public Task<List<FollowerDto>> GetFollowers(string followerUser);
     
-    public Task<List<FollowerDTO>> GetsFollowed(string followedUser);
+    public Task<List<FollowerDto>> GetsFollowed(string followedUser);
     
     public Task UnFollow(string followerUser, string followedUser);
     
@@ -49,11 +49,11 @@ public class FollowerRepository : IFollowerRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task<List<FollowerDTO>> GetFollowers(string followerUser)
+    public async Task<List<FollowerDto>> GetFollowers(string followerUser)
     {
         var query = from follower in _context.Followers
             where follower.FollowThem == followerUser
-            select new FollowerDTO
+            select new FollowerDto
             {
                 Followers = follower.FollowedBy
             };
@@ -61,11 +61,11 @@ public class FollowerRepository : IFollowerRepository
         return list;
     }
    
-    public async Task<List<FollowerDTO>> GetsFollowed(string followedUser)
+    public async Task<List<FollowerDto>> GetsFollowed(string followedUser)
     {
         var query = from follow in _context.Followers
             where follow.FollowedBy == followedUser
-            select new FollowerDTO
+            select new FollowerDto
             {
                 Followers = follow.FollowThem
             };

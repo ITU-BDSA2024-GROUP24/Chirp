@@ -14,8 +14,8 @@ public class UserTimelineModel : PageModel
     private readonly IFollowService _followService;
     required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
 
-    public List<FollowerDTO> Followers { get; set; } = new List<FollowerDTO>();
-    public List<FollowerDTO> Following { get; set; } = new List<FollowerDTO>();
+    public List<FollowerDto> Followers { get; set; } = new List<FollowerDto>();
+    public List<FollowerDto> Following { get; set; } = new List<FollowerDto>();
 
     public UserTimelineModel(ICheepService service, SignInManager<Author> signInManager, IFollowService followService)
     {
@@ -70,8 +70,8 @@ public class UserTimelineModel : PageModel
             Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
             if (loggedInUser != null)
             {
-                Followers = await _followService.GetFollowers(loggedInUser.UserName) ?? new List<FollowerDTO>();
-                Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDTO>();
+                Followers = await _followService.GetFollowers(loggedInUser.UserName) ?? new List<FollowerDto>();
+                Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDto>();
             }
             
         }
@@ -105,7 +105,7 @@ public class UserTimelineModel : PageModel
         TempData["Message"] = $"You are now following {FollowedUser}!";
 
         // Refresh the Following list
-        Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDTO>();
+        Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDto>();
 
         return RedirectToPage("UserTimeline");
     }
@@ -126,7 +126,7 @@ public class UserTimelineModel : PageModel
         await _followService.Unfollow(loggedInUser.UserName, FollowedUser);
 
         // Refresh the Following list
-        Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDTO>();
+        Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDto>();
 
         return RedirectToPage("UserTimeline", new { author = FollowedUser });
     }
