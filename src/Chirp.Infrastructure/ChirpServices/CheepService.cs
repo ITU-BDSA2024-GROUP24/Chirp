@@ -3,7 +3,7 @@ using Chirp.Infrastructure.ChirpRepositories;
 using Author = Chirp.Core.Author;
 
 namespace Chirp.Infrastructure.ChirpServices;
-public record CheepViewModel(string Author, string Message, string Timestamp);
+public record CheepViewModel(string? Author, string Message, string Timestamp);
 
 public interface ICheepService
 {
@@ -28,16 +28,16 @@ public class CheepService : ICheepService
 
     public List<CheepViewModel> GetCheeps(int page)
     {
-        List<CheepDTO> cheepDTOs = _repository.ReadCheepDTO(page).Result;
-        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep =>
+        List<CheepDto> cheepDtos = _repository.ReadCheepDTO(page).Result;
+        List<CheepViewModel> result = cheepDtos.ConvertAll(cheep =>
             new CheepViewModel(cheep.Author.UserName, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
         return result;
     }
 
     public List<CheepViewModel> GetCheepsFromAuthor(int page, string author)
     {
-        List<CheepDTO> cheepDTOs = _repository.ReadCheepDTOFromAuthor(page, author).Result;
-        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep =>
+        List<CheepDto> cheepDtos = _repository.ReadCheepDTOFromAuthor(page, author).Result;
+        List<CheepViewModel> result = cheepDtos.ConvertAll(cheep =>
             new CheepViewModel(cheep.Author.UserName, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
         return result;
     }
@@ -47,8 +47,8 @@ public class CheepService : ICheepService
     public List<CheepViewModel> GetCheepsFromFollower(int page, string author)
     {
         List<Cheep> cheeps = _repository.ReadCheepFromFollowed(author).Result;
-        List<CheepDTO> cheepDTOs = _repository.ReadCheepDTOFromFollowed(cheeps).Result;
-        List<CheepViewModel> result = cheepDTOs.ConvertAll(cheep =>
+        List<CheepDto> cheepDtos = _repository.ReadCheepDTOFromFollowed(cheeps).Result;
+        List<CheepViewModel> result = cheepDtos.ConvertAll(cheep =>
             new CheepViewModel(cheep.Author.UserName, cheep.Text, UnixTimeStampToDateTimeString(cheep.Timestamp)));
         return result;
     }

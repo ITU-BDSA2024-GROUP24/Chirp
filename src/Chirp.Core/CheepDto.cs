@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Chirp.Core;
 
-public class CheepDTO
+public class CheepDto
 {
     [Required]
     public required string Text { get; set; }

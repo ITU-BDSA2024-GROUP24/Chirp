@@ -52,29 +52,29 @@ public class CheepRepository : ICheepRepository
     
     
     //read and update cheep methods 
-    public Task<List<CheepDTO>> ReadCheepDTO(int page)
+    public Task<List<CheepDto>> ReadCheepDTO(int page)
     {
     {
         var query = (from cheep in _context.Cheeps
                 orderby cheep.TimeStamp descending
-                select new CheepDTO(){Text = cheep.Text, Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds, Author = cheep.Author})
+                select new CheepDto(){Text = cheep.Text, Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds, Author = cheep.Author})
             //.Include(c => c.Author)
             .Skip((page - 1) * cheepsPerPage)
             .Take(cheepsPerPage);
         return query.ToListAsync();
     }    }
 
-    public Task UpdateCheep(CheepDTO alteredCheep)
+    public Task UpdateCheep(CheepDto alteredCheep)
     {
         throw new NotImplementedException();
     }
     
-    public Task<List<CheepDTO>> ReadCheepDTOFromAuthor(int page, string authorName)
+    public Task<List<CheepDto>> ReadCheepDTOFromAuthor(int page, string authorName)
     {
         var query = (from cheep in _context.Cheeps
                 where cheep.Author.UserName == authorName
                 orderby cheep.TimeStamp descending
-                select new CheepDTO(){Text = cheep.Text, Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds, Author = cheep.Author})
+                select new CheepDto(){Text = cheep.Text, Timestamp = (long)cheep.TimeStamp.Subtract(DateTime.UnixEpoch).TotalSeconds, Author = cheep.Author})
             //.Include(c => c.Author)
             .Skip((page - 1) * cheepsPerPage)
             .Take(cheepsPerPage);
@@ -92,12 +92,12 @@ public class CheepRepository : ICheepRepository
         return query.ToListAsync();
        
     }
-    public async Task<List<CheepDTO>> ReadCheepDTOFromFollowed(List<Cheep> cheeps)
+    public async Task<List<CheepDto>> ReadCheepDTOFromFollowed(List<Cheep> cheeps)
     {
-        var CheepDTOs = new List<CheepDTO>();
+        var CheepDTOs = new List<CheepDto>();
         foreach (var cheep in cheeps)
         {
-            var DTO = new CheepDTO
+            var DTO = new CheepDto
             {
                 Text = cheep.Text,
                 Author = cheep.Author,
