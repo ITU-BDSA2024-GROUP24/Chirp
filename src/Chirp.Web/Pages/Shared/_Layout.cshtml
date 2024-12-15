@@ -6,37 +6,43 @@
     <link rel="icon" type="image/png" href="/favicon/favicon.ico">
 </head>
 <body>
-<div class=page>
-    <h1><img src="/images/icon1.png" alt="Icon1"/>Chirp!</h1>
-    <div class=navigation>
+<div class="page">
+    <h1>
+        <img src="/images/icon1.png" alt="Icon1"/>Chirp!
+    </h1>
+    <div class="navigation">
         @if (User.Identity.IsAuthenticated)
         {
-            <div>
-                <a href="/@(User.Identity.Name)">my timeline</a> |
-                <a href="/">public timeline</a> |
-                <a href="/Identity/Account/Logout" >logout [@(User.Identity.Name)]</a> |
-                <a href="/Aboutme/@(User.Identity.Name)" >About me</a>
-            </div>
+        <div>
+            <a href="/@(User.Identity.Name)">my timeline</a> |
+            <a href="/">public timeline</a> |
+            <a href="/Identity/Account/Logout">logout [@(User.Identity.Name)]</a> |
+            <a href="/Aboutme/@(User.Identity.Name)">About me</a>
+        </div>
         }
         else
         {
-            <div>
-                <a href="/">public timeline</a> |
-                <a href="/Identity/Account/Register" >register</a> |
-                <a href="/Identity/Account/Login" >login</a>
-
-            </div>
+        <div>
+            <a href="/">public timeline</a> |
+            <a href="/Identity/Account/Register">register</a> |
+            <a href="/Identity/Account/Login">login</a>
+        </div>
         }
     </div>
-    
-    <div class=body>
-            @RenderBody()
+
+    <div class="body">
+        @RenderBody()
     </div>
-    <div class=footer>
+    <div class="footer">
         Chirp &mdash; An ASP.NET Application
     </div>
 </div>
 
-</body>
+<!-- Add Validation Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation/1.19.3/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
 @await RenderSectionAsync("Scripts", required: false)
+</body>
 </html>

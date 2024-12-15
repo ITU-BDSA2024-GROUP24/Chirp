@@ -54,12 +54,17 @@ public class PublicModel : PageModel
 
     public async Task<IActionResult> OnPostAsync()
     {
-        if (!ModelState.IsValid)
         {
-            return NotFound();
-        }
-        else
-        {
+            if (string.IsNullOrWhiteSpace(CheepMessage.Message))
+            {
+                ModelState.AddModelError("Message", "Cheep cannot be empty.");
+                return Page();
+            }
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+        
             Author author = await _service.GetAuthorByName(User.Identity.Name);
             if( author == null)
             {
@@ -87,7 +92,7 @@ public class PublicModel : PageModel
         else
         {
             await _followService.AddFollower(loggedInUser, followedUser);
-            TempData["Message"] = $"YAY! You are now following {followedUser} !";
+            TempData["Message"] = $"YAY!You are now following {followedUser}! - To unfollow go to my timeline";
         }
 
         return RedirectToPage();
