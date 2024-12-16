@@ -13,7 +13,7 @@ public class UserTimelineModel : PageModel
     private readonly ICheepService _service;
     private readonly SignInManager<Author> _signInManager;
     private readonly IFollowService _followService;
-    required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
+    public required List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
 
     public List<FollowerDto> Followers { get; set; } = new List<FollowerDto>();
     public List<FollowerDto> Following { get; set; } = new List<FollowerDto>();
@@ -27,11 +27,12 @@ public class UserTimelineModel : PageModel
 
     }
 
-    [BindProperty] public string Message { get; set; }
+    [BindProperty] 
+    public required string Message { get; set; }
 
-    [BindProperty] public string FollowedUser { get; set; }
+    [BindProperty] public required string FollowedUser { get; set; }
 
-    [BindProperty] public string FollowerUser { get; set; }
+    [BindProperty] public required string FollowerUser { get; set; }
 
 
 
