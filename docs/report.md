@@ -89,11 +89,31 @@ Briefly describe what kinds of tests you have in your test suites and what they 
 
 # Ethics
 
+## Data processing
+
+<!--
+Not stated as mandatory but felt right to add
+-->
+
+For our data processing, we rely on legitimate interest as the legal basis for handling a limited amount of user data. This data is strictly necessary to provide the core functionalities of the application. For transparency and uphold of users data privacy rights, we have implemented features that allow users to view their stored data and delete their account, along with all associated data.
+
+Additionally, Cheeps may contain personal data. However, as these messages are user-generated content shared publicly, we do not control the type of information disclosed, and it is considered public information provided by the user.
+
+We acknowledge that, even with these minor implementations, a dedicated privacy policy page would have been a valuable addition to clearly disclose our data processing practices.
+
+
 ## License
 <!--
 State which software license you chose for your application.
 
 -->
+
+We decided to go with the MIT License for our Chirp application. This license is a highly permissive open-source license that allows anyone to freely use, modify, and distribute our code, even for proprietary or closed-source projects.
+
+We chose this license with the belief that, if our work could be helpful to anyone, they should be allowed to use it freely. While it is unlikely that this will happen, we have no stake in the project beyond its academic purpose, making the MIT License the most suitable choice.
+
+Furthermore, all the libraries we use are either also licensed under the MIT License or are in the public domain, so our choice of license does not conflict with any of them.
+
 
 
 ## LLMs, ChatGPT, CoPilot, and others
@@ -106,3 +126,10 @@ Discuss briefly if application of LLMs sped up your development or if the contra
 
 
 -->
+
+During the development of Chirp, both ChatGPT, CoPilot, and Codeium were used. The idea was that if an LLM was used to generate code, it would be credited as a co-author of that part. However, if it was only used for tasks like sparring (e.g., finding a small syntax error or reading grammatical errors in the report), the group felt that these changes were so minuscule that crediting the LLM as a co-author was unnecessary. 
+
+In the end, the use of LLMs was seen as overall helpful, especially in cases where one had simply lost a bit of oversight. However, when LLMs were used to generate pieces of code, they were often unsatisfactory, and our own implementation would supersede it. Even though the example provided by the LLM could sometimes be unhelpful, it still occasionally served as inspiration.
+
+To sum up, the use of LLMs is most effective when you already have a clear idea of what you want the result to be. 
+
