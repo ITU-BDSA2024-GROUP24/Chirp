@@ -9,6 +9,10 @@
 <div>
     <h2> @routeName's Timeline </h2>
 
+
+    @{
+        System.Diagnostics.Debug.Assert(User.Identity != null, "User.Identity != null");
+    }
     @if (User.Identity.IsAuthenticated)
     {
         <div class="CheepMessageField">

@@ -1,4 +1,5 @@
 ﻿
+using System.Diagnostics;
 using Chirp.Core;
 using Chirp.Infrastructure.ChirpServices;
 using Microsoft.AspNetCore.Identity;
@@ -41,9 +42,11 @@ public class PublicModel : PageModel
         
         Cheeps = _service.GetCheeps(page);
 
+        Debug.Assert(User.Identity != null, "User.Identity != null");
         if (User.Identity.IsAuthenticated)
         {
             var loggedInUser = User.Identity.Name;
+            Debug.Assert(loggedInUser != null, nameof(loggedInUser) + " != null");
             Following = await _followService.GetsFollowed(loggedInUser)?? new List<FollowerDto>();
         }
 
@@ -64,12 +67,10 @@ public class PublicModel : PageModel
             {
                 return Page();
             }
-        
+
+            Debug.Assert(User.Identity != null, "User.Identity != null");
+            Debug.Assert(User.Identity.Name != null, "User.Identity.Name != null");
             Author author = await _service.GetAuthorByName(User.Identity.Name);
-            if( author == null)
-            {
-                return RedirectToPage("Public");
-            }
             await _service.AddCheep(author, CheepMessage.Message  ?? throw new NullReferenceException());
         }
         return RedirectToPage("Public");
@@ -83,6 +84,7 @@ public class PublicModel : PageModel
         }
         var loggedInUser = User.Identity.Name;
 
+        Debug.Assert(loggedInUser != null, nameof(loggedInUser) + " != null");
         var existingFollowers = await _followService.GetFollowers(loggedInUser);
         if (existingFollowers.Any(f => f.Followers == followedUser))
         {

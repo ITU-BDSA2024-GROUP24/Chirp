@@ -5,11 +5,11 @@ using Chirp.Web.Pages.Shared;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.RazorPages;
+
 
 namespace Chirp.Web.Pages;
 
-public class infopage : PageModel
+public class Infopage : PageModel
 {
     
     private readonly ICheepService _service;
@@ -17,7 +17,7 @@ public class infopage : PageModel
     required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
     public required Task<Author> Author { get; set; }
     
-    public infopage(ICheepService service, SignInManager<Author> signInManager)
+    public Infopage(ICheepService service, SignInManager<Author> signInManager)
     {
         _signInManager = signInManager;
         _service = service;

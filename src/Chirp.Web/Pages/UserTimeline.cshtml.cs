@@ -1,8 +1,10 @@
-﻿using Chirp.Core;
+﻿using System.Diagnostics;
+using Chirp.Core;
 using Chirp.Infrastructure.ChirpServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Build.Framework;
 
 namespace Chirp.Web.Pages;
 
@@ -15,7 +17,8 @@ public class UserTimelineModel : PageModel
 
     public List<FollowerDto> Followers { get; set; } = new List<FollowerDto>();
     public List<FollowerDto> Following { get; set; } = new List<FollowerDto>();
-
+    
+  
     public UserTimelineModel(ICheepService service, SignInManager<Author> signInManager, IFollowService followService)
     {
         _signInManager = signInManager;
@@ -45,8 +48,9 @@ public class UserTimelineModel : PageModel
             ModelState.AddModelError("Message", "Cheep cannot be empty.");
             return Page();
         }
-        
 
+
+        Debug.Assert(User.Identity.Name != null, "User.Identity.Name != null");
         Author? author = await _service.GetAuthorByName(User.Identity.Name);
         if (author == null)
         {
@@ -74,13 +78,12 @@ public class UserTimelineModel : PageModel
 
         if (User.Identity!.IsAuthenticated)
         {
+            Debug.Assert(User.Identity.Name != null, "User.Identity.Name != null");
             Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
-            if (loggedInUser != null)
-            {
-                Followers = await _followService.GetFollowers(loggedInUser.UserName) ?? new List<FollowerDto>();
-                Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDto>();
-            }
-            
+            Debug.Assert(loggedInUser.UserName != null, "loggedInUser.UserName != null");
+            Followers = await _followService.GetFollowers(loggedInUser.UserName) ?? new List<FollowerDto>();
+            Following = await _followService.GetsFollowed(loggedInUser.UserName) ?? new List<FollowerDto>();
+
         }
 
         return Page();
@@ -95,12 +98,14 @@ public class UserTimelineModel : PageModel
             return NotFound();
         }
 
+        Debug.Assert(User.Identity.Name != null, "User.Identity.Name != null");
         Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
         if (loggedInUser == null || string.IsNullOrEmpty(FollowedUser))
         {
             return RedirectToPage("UserTimeline");
         }
 
+        Debug.Assert(loggedInUser.UserName != null, "loggedInUser.UserName != null");
         var existingFollowers = await _followService.GetFollowers(loggedInUser.UserName);
         if (existingFollowers.Any(f => f.Followers == FollowedUser))
         {
@@ -124,12 +129,14 @@ public class UserTimelineModel : PageModel
             return NotFound();
         }
 
+        Debug.Assert(User.Identity.Name != null, "User.Identity.Name != null");
         Author? loggedInUser = await _service.GetAuthorByName(User.Identity.Name);
-        if (loggedInUser == null || string.IsNullOrEmpty(FollowedUser))
+        if (string.IsNullOrEmpty(FollowedUser))
         {
             return RedirectToPage("UserTimeline");
         }
 
+        Debug.Assert(loggedInUser.UserName != null, "loggedInUser.UserName != null");
         await _followService.Unfollow(loggedInUser.UserName, FollowedUser);
 
         // Refresh the Following list

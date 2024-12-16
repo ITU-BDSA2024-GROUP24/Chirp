@@ -92,7 +92,7 @@ public class CheepRepository : ICheepRepository
         return query.ToListAsync();
        
     }
-    public async Task<List<CheepDto>> ReadCheepDTOFromFollowed(List<Cheep> cheeps)
+    public Task<List<CheepDto>> ReadCheepDTOFromFollowed(List<Cheep> cheeps)
     {
         var CheepDTOs = new List<CheepDto>();
         foreach (var cheep in cheeps)
@@ -105,7 +105,7 @@ public class CheepRepository : ICheepRepository
             };
             CheepDTOs.Add(DTO);
         } 
-        return CheepDTOs;
+        return Task.FromResult(CheepDTOs);
     }
 
 

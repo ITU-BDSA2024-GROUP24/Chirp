@@ -11,6 +11,10 @@
         <img src="/images/icon1.png" alt="Icon1"/>Chirp!
     </h1>
     <div class="navigation">
+
+        @{
+            System.Diagnostics.Debug.Assert(User.Identity != null, "User.Identity != null");
+        }
         @if (User.Identity.IsAuthenticated)
         {
         <div>
