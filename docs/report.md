@@ -35,6 +35,15 @@ Remember, you developed a client-server application.
 Illustrate the server component and to where it is deployed, illustrate a client component, and show how these communicate with each other.
 -->
 
+As can be seen below, the deployed application follows a client-server model, where the client communicates with the Azure-hosted Chirp application using HTTP. The server interacts with an SQLite database, which stores data such as cheeps, following relationships, and author information. The client sends HTTP requests to the server, which processes the requests and retrieves data from the database to respond appropriately.
+
+While it is not shown in the illustration, if a user decides to log in with their GitHub account, a call to GitHub OAuth is made.
+
+
+
+![Architecture of deployed application](images/Architecture of deployed application.drawio.png)
+
+
 ## User activities
 <!--
 Illustrate typical scenarios of a user journey through your _Chirp!_ application.
@@ -42,6 +51,13 @@ That is, start illustrating the first page that is presented to a non-authorized
 
 Make sure that the illustrations are in line with the actual behavior of your application.
 -->
+
+Here can be seen three of the most typical user scenarios: logging in and out, sending a cheep and following another user, and finally, accessing the 'about me' page along with deleting the user's profile. The first scenario starts when the user is not authorized, while the latter two occur when the user is authorized. It should be noted that sending a cheep can be done from all timelines.
+
+![UA1](images/ua1.drawio.png)
+![UA2](images/ua2.drawio.png)
+![UA3](images/ua3.drawio.png)
+
 
 ## Sequence of functionality/calls trough _Chirp!_
 <!--
