@@ -3,10 +3,10 @@ title: _Chirp!_ Project Report
 subtitle: ITU BDSA 2024 Group `<24>`
 author:
 - "Caroline Sloth Johansen <cslj@itu.dk>"
-- "Bianca <biso@itu.dk>"
-- "Frederik <fbor@itu.dk>"
-- "Xander <xamy@itu.dk>"
-- "Alex <@itu.dk>"
+- "Bianca Brandt Sørensen <biso@itu.dk>"
+- "Frederik Borg <fbor@itu.dk>"
+- "Xander Mygind <xamy@itu.dk>"
+- "Alex David Juhl <alju@itu.dk>"
 numbersections: true
 ---
 
