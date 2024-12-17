@@ -41,7 +41,7 @@ While it is not shown in the illustration, if a user decides to log in with thei
 
 
 
-![Architecture of deployed application](images/Architecture of deployed application.drawio.png)
+![Architecture of deployed application](images/Architecture%20of%20deployed%20application.drawio.png)
 
 
 ## User activities
