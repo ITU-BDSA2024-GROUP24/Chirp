@@ -44,4 +44,8 @@
       <Folder Include="Pages\Shared\Model\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="PlaywrightTests\package-lock.json" />
+    </ItemGroup>
+
 </Project>
