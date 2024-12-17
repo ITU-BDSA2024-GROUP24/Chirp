@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http.Extensions
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <title>@ViewData["Title"]</title>
@@ -17,26 +18,50 @@
         }
         @if (User.Identity.IsAuthenticated)
         {
-        <div>
-            <a href="/@(User.Identity.Name)">my timeline</a> |
-            <a href="/">public timeline</a> |
-            <a href="/Identity/Account/Logout">logout [@(User.Identity.Name)]</a> |
-            <a href="/Aboutme/@(User.Identity.Name)">About me</a>
-        </div>
+            <div>
+                <a href="/@(User.Identity.Name)">my timeline</a> |
+                <a href="/">public timeline</a> |
+                <a href="/Identity/Account/Logout">logout [@(User.Identity.Name)]</a> |
+                <a href="/Aboutme/@(User.Identity.Name)">About me</a>
+            </div>
         }
         else
         {
-        <div>
-            <a href="/">public timeline</a> |
-            <a href="/Identity/Account/Register">register</a> |
-            <a href="/Identity/Account/Login">login</a>
-        </div>
+            <div>
+                <a href="/">public timeline</a> |
+                <a href="/Identity/Account/Register">register</a> |
+                <a href="/Identity/Account/Login">login</a>
+            </div>
         }
     </div>
 
     <div class="body">
         @RenderBody()
     </div>
+    @if (Context.Request.Query.ContainsKey("page"))
+    {
+        <div class="navigation">
+            @{
+                int currentPage = int.Parse(Context.Request.Query["page"]);
+
+                var nextPageUrl = $"{Context.Request.Path}?page={currentPage + 1}";
+                var previousPageUrl = $"{Context.Request.Path}?page={currentPage - 1}";
+            }
+
+            <p>Page: @currentPage</p>
+
+            @if (currentPage > 1)
+            {
+                <a href="@previousPageUrl">
+                    <button>Previous</button>
+                </a>
+            }
+
+            <a href="@nextPageUrl">
+                <button> Next</button>
+            </a>
+        </div>
+    }
     <div class="footer">
         Chirp &mdash; An ASP.NET Application
     </div>
