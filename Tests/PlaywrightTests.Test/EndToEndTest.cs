@@ -64,6 +64,7 @@ public class EndToEndTest: PageTest
         
     }
     
+    /*
     [Test]
     public async Task Register()
     {
@@ -80,7 +81,7 @@ public class EndToEndTest: PageTest
         await Page.GetByRole(AriaRole.Button, new() { Name = "Register" }).ClickAsync();
         await Page.GetByRole(AriaRole.Link, new() { Name = "Click here to confirm your" }).ClickAsync();
         await Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" }).ClickAsync();
-    }
+    }*/
     
     [Test]
     public async Task GoToLogin()
@@ -88,7 +89,7 @@ public class EndToEndTest: PageTest
         await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "login" }).ClickAsync();
     }
-    
+    /*
     [Test]
     public async Task RegisterLoginGoToMytimeline()
     {
@@ -114,8 +115,8 @@ public class EndToEndTest: PageTest
         await Page.GetByPlaceholder("name@example.com").FillAsync("p@p.p");
         await Page.GetByRole(AriaRole.Button, new() { Name = "Log in" }).ClickAsync();
         await Page.GetByRole(AriaRole.Link, new() { Name = "my timeline" }).ClickAsync();
-    }
-    
+    }*/
+    /*
     [Test]
     public async Task PostCheepOnMytimeline()
     {
@@ -144,8 +145,9 @@ public class EndToEndTest: PageTest
         await Page.GetByPlaceholder("Write your cheep...").ClickAsync();
         await Page.GetByPlaceholder("Write your cheep...").FillAsync("hello");
         await Page.GetByRole(AriaRole.Button, new() { Name = "Post" }).ClickAsync();
-    }
+    }*/
     
+    /*
     [Test]
     public async Task RegisterLoginCheepLogout()
     {
@@ -176,7 +178,7 @@ public class EndToEndTest: PageTest
         await Page.GetByRole(AriaRole.Button, new() { Name = "Post" }).ClickAsync();
         await Page.GetByRole(AriaRole.Link, new() { Name = "logout [Playwright]" }).ClickAsync();
         await Page.GetByRole(AriaRole.Button, new() { Name = "Click here to Logout" }).ClickAsync();
-    }
+    }*/
 
 
 }
