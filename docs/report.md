@@ -96,6 +96,19 @@ Briefly describe which tasks are still unresolved, i.e., which features are miss
 
 Briefly describe and illustrate the flow of activities that happen from the new creation of an issue (task description), over development, etc. until a feature is finally merged into the `main` branch of your repository.
 -->
+The photo below shows our project board.
+
+(OBS! Insert photo of project board before submit)
+
+There are two unresolved issues: both the playwright test and unit testing. These are unresolved because we wanted to add more tests to the ones we have.  (OBS! We can elaborate on this before submission.)
+At the beginning of the project, we verbally agreed to maintain good group practices and use the tools we learned in a group work course from our first semester.
+Our workflow is shown in the illustrations below. The first illustration reflects how we actually worked, while the second illustrates how our workflow should have been to optimize collaboration and workflow.
+
+![TW](images/TW.drawio.png) ![TW Should Have Done](images/TW%20Should%20Have%20Done.drawio.png)
+
+For this project, we agreed to create issues for each task from ‘README’ that had to be implemented and completed in Chirp. However, we didn't have a clear structure for how to structure these issues. We later were made aware that using checkboxes for issues provides a better overview of progress and makes it easier for others to continue working on them. Some of the newer issues therefore have checkboxes but still did not follow any formal template. 
+After creating an issue one or more people from the group assigned themselves to the issue. When assigned, one starts working on the issue. We often approve each other’s work as we develop it or when coding together, as shown in the first illustration. There should have been a better process with pull requests and then another person reviewing to approve the code. This is a better practice, as we have learned in this course. This is seen in the second illustration.
+
 ## How to make _Chirp!_ work locally
 <!--
 There has to be some documentation on how to come from cloning your project to a running system.
