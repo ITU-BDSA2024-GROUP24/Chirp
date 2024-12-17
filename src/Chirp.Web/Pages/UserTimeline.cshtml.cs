@@ -74,6 +74,8 @@ public class UserTimelineModel : PageModel
         }
         Cheeps = _service.GetCheepsFromAuthor(page, author)
             .Union(_service.GetCheepsFromFollower(page, author))
+            .Skip((page - 1) * 32)
+            .Take(32)
             .ToList();
 
 
