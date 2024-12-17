@@ -15,38 +15,47 @@
     }
     @if (User.Identity.IsAuthenticated)
     {
-        <div class="CheepMessageField">
-            <h3>Hello, @(User.Identity!.Name)! What do you want to share today?</h3>
-            <form method="post">
-                <input type="text" asp-for="Message" placeholder="Write your cheep..." />
-                <button type="submit">Post</button>
-            </form>
-        </div>
+        @if (User.Identity!.Name == (string?)routeName)
+        {
+            <div class="CheepMessageField">
+                <h3>Hello, @(User.Identity!.Name)! What do you want to share today?</h3>
+                <form method="post">
+                    <input type="text" asp-for="Message" placeholder="Write your cheep..." />
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+        }
+        
     }
     else
     {
     <p>Please <a href="/Identity/Account/Login">log in</a> to post a cheep.</p>
     }
-    <h3>Users You Follow</h3>
-    @if (Model.Following.Any())
+    
+    @if (User.Identity!.Name == (string?)routeName)
     {
-    <ul>
-        @foreach (var following in Model.Following)
+        <h3>Users You Follow</h3>
+        @if (Model.Following.Any())
         {
-        <li>
-            @following.Followers
-            <form method="post" asp-page-handler="Unfollow">
-                <input type="hidden" name="FollowedUser" value="@following.Followers" />
-                <button type="submit">Unfollow</button>
-            </form>
-        </li>
+            <ul>
+                @foreach (var following in Model.Following)
+                {
+                    <li>
+                        @following.Followers
+                        <form method="post" asp-page-handler="Unfollow">
+                            <input type="hidden" name="FollowedUser" value="@following.Followers" />
+                            <button type="submit">Unfollow</button>
+                        </form>
+                    </li>
+                }
+            </ul>
         }
-    </ul>
+        else
+        {
+            <p>You are not following anyone yet.</p>
+        }
     }
-    else
-    {
-    <p>You are not following anyone yet.</p>
-    }
+    
     @if (Model.Cheeps.Any())
     {
         <ul id="messagelist" class="cheeps">

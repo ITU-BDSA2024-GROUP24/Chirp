@@ -1,4 +1,5 @@
-﻿using Chirp.Core;
+﻿using System.Diagnostics;
+using Chirp.Core;
 using Chirp.Infrastructure;
 using Chirp.Infrastructure.ChirpServices;
 using Chirp.Web.Pages.Shared;
@@ -14,7 +15,7 @@ public class Infopage : PageModel
     
     private readonly ICheepService _service;
     private readonly SignInManager<Author> _signInManager;
-    required public List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
+    public required List<CheepViewModel> Cheeps { get; set; } = new List<CheepViewModel>();
     public required Task<Author> Author { get; set; }
     
     public Infopage(ICheepService service, SignInManager<Author> signInManager)
@@ -33,7 +34,8 @@ public class Infopage : PageModel
         {
             return NotFound();
         }
-        
+
+        Debug.Assert(User.Identity.Name != null, "User.Identity.Name != null");
         Author? author = await _service.GetAuthorByName(User.Identity.Name);
         if (author == null)
         {
