@@ -72,7 +72,8 @@ Some HTTP calls and responses, some calls and responses in C# and likely some mo
 
 When accessing the Chirp Azure website, whether you are an authorized or unauthorized user, the HTTP request begins by retrieving the Chirp application for the public timeline. This process involves the `GetCheeps` call, which collects all the cheeps from the database and sends them back. The `ReadCheepDTO` then returns a specific number of cheeps, as well as the number of cheeps to skip, to be displayed on the public timeline before returning the page to the user.
 
-![Chirp Sequence Diagram](images/Chirp%Sequence%Diagram.drawio.png)
+![Chirp Sequence Diagram](images/Chirp%20Sequence%20Diagram.drawio.png)
+
 
 
 
