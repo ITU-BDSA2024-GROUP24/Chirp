@@ -35,13 +35,13 @@ public class EndToEndTest: PageTest
     [Test]
     public async Task OpenStartpage()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
     }
 
     [Test]
     public async Task StartpageButtonsVisable()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "public timeline" })).ToBeVisibleAsync();
         await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "register" })).ToBeVisibleAsync();
         await Expect(Page.GetByRole(AriaRole.Link, new() { Name = "login" })).ToBeVisibleAsync();
@@ -54,7 +54,7 @@ public class EndToEndTest: PageTest
     [Test]
     public async Task GoToRegister()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
     }
 
@@ -67,7 +67,7 @@ public class EndToEndTest: PageTest
     [Test]
     public async Task Register()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).FillAsync("Playwright");
@@ -85,14 +85,14 @@ public class EndToEndTest: PageTest
     [Test]
     public async Task GoToLogin()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "login" }).ClickAsync();
     }
     
     [Test]
     public async Task RegisterLoginGoToMytimeline()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).FillAsync("Playwright");
@@ -119,7 +119,7 @@ public class EndToEndTest: PageTest
     [Test]
     public async Task PostCheepOnMytimeline()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).FillAsync("Playwright");
@@ -149,7 +149,7 @@ public class EndToEndTest: PageTest
     [Test]
     public async Task RegisterLoginCheepLogout()
     {
-        await Page.GotoAsync("https://bdsagroup024chirprazor.azurewebsites.net/?page=1");
+        await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).ClickAsync();
         await Page.GetByPlaceholder("Name", new() { Exact = true }).FillAsync("Playwright");
