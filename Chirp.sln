@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chirp.Infrastructure", "src
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chirp.Web", "src\Chirp.Web\Chirp.Web.csproj", "{741994A7-7EBA-4831-A8E4-9330E14F8ADB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chirp.Infrastructure.Test", "Tests\Chirp.Infrastructure.Test\Chirp.Infrastructure.Test.csproj", "{17C81D26-1F38-4534-BDAE-50FD2A7D4A23}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaywrightTests.Test", "Tests\PlaywrightTests.Test\PlaywrightTests.Test.csproj", "{627E725B-0D45-49BA-BDAA-3F4C9D055A2F}"
 EndProject
 Global
@@ -36,10 +34,6 @@ Global
 		{741994A7-7EBA-4831-A8E4-9330E14F8ADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{741994A7-7EBA-4831-A8E4-9330E14F8ADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{741994A7-7EBA-4831-A8E4-9330E14F8ADB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{17C81D26-1F38-4534-BDAE-50FD2A7D4A23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{17C81D26-1F38-4534-BDAE-50FD2A7D4A23}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{17C81D26-1F38-4534-BDAE-50FD2A7D4A23}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{17C81D26-1F38-4534-BDAE-50FD2A7D4A23}.Release|Any CPU.Build.0 = Release|Any CPU
 		{627E725B-0D45-49BA-BDAA-3F4C9D055A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{627E725B-0D45-49BA-BDAA-3F4C9D055A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{627E725B-0D45-49BA-BDAA-3F4C9D055A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
