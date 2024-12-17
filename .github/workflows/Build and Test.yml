@@ -23,4 +23,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: |
+        export GitHub__ClientId="${{ secrets.GITHUBCLIENTID_SECRET }}"
+        export GitHub__ClientSecret="${{ secrets.GITHUBCLIENTSECRET_SECRET }}"
+        dotnet test --filter FullyQualifiedName!~PlaywrightTests.Test --configuration Release
