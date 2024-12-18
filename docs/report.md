@@ -128,7 +128,7 @@ The photo below shows our project board.
 
 (OBS! Insert photo of project board before submit)
 
-There are two unresolved issues: both the playwright test and unit testing. These are unresolved because we wanted to add more tests to the ones we have.  (OBS! We can elaborate on this before submission.)
+There are two unresolved issues: both the playwright test and unit testing. These are unresolved because we wanted to add more tests to the ones we have. 
 
 At the beginning of the project, we verbally agreed to maintain good group practices and use the tools we learned in a group work course from our first semester.
 Our workflow is shown in the illustrations below. The first illustration reflects how we actually worked, while the second illustrates how our workflow should have been to optimize collaboration and workflow.
