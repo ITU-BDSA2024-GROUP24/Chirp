@@ -14,4 +14,4 @@ dotnet run
 Alternatively, the Chirp web application can be accessed via this link:  
 [https://bdsagroup024chirprazor.azurewebsites.net/](https://bdsagroup024chirprazor.azurewebsites.net/)
 
-The report for the project can be found [here.](docs/report.md).
+The report for the project can be found [here](docs/report.md).
