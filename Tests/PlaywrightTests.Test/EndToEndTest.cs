@@ -57,14 +57,14 @@ public class EndToEndTest: PageTest
         await Page.GotoAsync("http://localhost:5273");
         await Page.GetByRole(AriaRole.Link, new() { Name = "register" }).ClickAsync();
     }
-
+    /*
     [Test]
     public async Task GoToTestPersonTimeline()
     {
         
     }
     
-    /*
+    
     [Test]
     public async Task Register()
     {

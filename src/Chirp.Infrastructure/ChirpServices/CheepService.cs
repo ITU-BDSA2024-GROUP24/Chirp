@@ -12,7 +12,7 @@ public interface ICheepService
     Task AddCheep(Author author, string text);
     Task<Author> GetAuthorByName(string name);
     Task<Author> GetAuthorByEmail(string email);
-    Task AddAuthor(Author author);
+    Task AddAuthor(string UserName, string Email);
     //Task AddFollower(string followerUser, string followedUser);
     List<CheepViewModel> GetCheepsFromFollower(int page, string author);
 }
@@ -83,8 +83,14 @@ public class CheepService : ICheepService
         await _repository.CreateCheep(cheep);
     }
 
-    public async Task AddAuthor(Author author)
+    public async Task AddAuthor(string userName, string email)
     {
+        Author author = new()
+        {
+            UserName = userName,
+            Email = email,
+            Cheeps = new List<Cheep>()
+        };
         await _repository.CreateAuthor(author);
     }
 
