@@ -54,6 +54,8 @@ Make sure that the illustrations are in line with the actual behavior of your ap
 
 Here can be seen three of the most typical user scenarios: logging in and out, sending a cheep and following another user, and finally, accessing the 'about me' page along with deleting the user's profile. The first scenario starts when the user is not authorized, while the latter two occur when the user is authorized. It should be noted that sending a cheep can be done from all timelines.
 
+It should be noted that a cheep cannot be longer than 160 characters, and if a cheep is blank, a warning appears.
+
 ![UA1](images/UA1.drawio.png) ![UA2](images/UA2.drawio.png) ![UA3](images/UA3.drawio.png)
 
 
