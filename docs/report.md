@@ -27,6 +27,11 @@ Illustrate the organization of your code base.
 That is, illustrate which layers exist in your (onion) architecture.
 Make sure to illustrate which part of your code is residing in which layer.
 -->
+Our project is based on the onion architecture, which we implemented using dependency injection. This approach makes it easy for us to replace layers around the domain model. The domain model is the inner layer, called Chirp.Core. The next layer is Chirp.Infrastructure, which handles our infrastructure, and the outer layer is Chirp.Web, responsible for our UI elements and Razor Pages. This is also illustrated in the image below:
+
+![Onion](images/Onion.png)
+
+The onion architecture improves testing efficiency. We test the layers in isolation using unit tests, creating mock versions of our project.
 
 ## Architecture of deployed application
 <!--
