@@ -104,10 +104,12 @@ The processes of building, testing, releasing and deploying, have all been autom
 
 ### Build and Test
 This workflow runs on every push or pull request to the main branch and has the purpose of ensuring that the newly pushed code doesn’t cause any of our tests to fail and informs us what needs to be looked at. If the workflow runs to completion, we can be confident that any new features don’t interfere with our old ones. 
+
 ![BuildAndTest](images/BuildAndTest.png)
 
 ### Release
 The release workflow only runs when a new version tag is pushed. We thought that automatic releases on every push was unnecessary, and only making a new release when a new feature was added was enough. Unfortunately, we often forgot to add version tags when appropriate, which has led to a lack of releases throughout development.
+
 ![Release](images/Release.png)
 
 ### Deployment
