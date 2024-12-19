@@ -11,8 +11,8 @@ public interface ICheepRepository
     public Task<List<CheepDto>> ReadCheepDTO(int page);
     public Task<List<CheepDto>> ReadCheepDTOFromAuthor(int page, string authorName);
     public Task UpdateCheep(CheepDto alteredCheep);
-    public Task<Core.Author> GetAuthorByName(string name);
-    public Task<Core.Author> GetAuthorByEmail(string email);
+    public Task<Author> GetAuthorByName(string name);
+    public Task<Author> GetAuthorByEmail(string email);
     public Task<List<Cheep>> ReadCheepFromFollowed(string authorName);
     public Task<List<CheepDto>> ReadCheepDTOFromFollowed(List<Cheep> cheeps);
 

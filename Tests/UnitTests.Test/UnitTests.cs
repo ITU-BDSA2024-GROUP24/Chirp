@@ -1,7 +1,6 @@
 ﻿using Chirp.Core;
 using Chirp.Infrastructure;
 using Chirp.Infrastructure.ChirpRepositories;
-using Chirp.Infrastructure.ChirpServices;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
@@ -54,7 +53,7 @@ public class UnitTests
     }
    
     [Fact]
-    public async void CreateAuthorTest()
+    public async void CreateAuthorAndGetAuthorByNameTest()
     {
         var repository = await SetUpRepositoryAsync();
         
@@ -80,5 +79,40 @@ public class UnitTests
         var cheeps = await repository.ReadCheepDTO(1);
         Assert.NotEmpty(cheeps);
     }
+
+    [Fact]
+    public async void EmptyPageTwoTest()
+    {
+        var repository = await SetUpRepositoryAsync();
+        await repository.CreateAuthor(newAuthor("TestUser","test@email.com"));
+        var testUser = await repository.GetAuthorByName("TestUser");
+        await repository.CreateCheep(newCheep(testUser, "Hello World"));
+        var cheeps = await repository.ReadCheepDTO(2);
+        Assert.Empty(cheeps);
+    }
     
+    [Fact]
+    public async void NotEmptyPageTwoTest()
+    {
+        var repository = await SetUpRepositoryAsync();
+        await repository.CreateAuthor(newAuthor("TestUser","test@email.com"));
+        var testUser = await repository.GetAuthorByName("TestUser");
+        for (var i = 1; i <= 33; i++)
+        {
+            var text = ($"Hello World {i}"); 
+            await repository.CreateCheep(newCheep(testUser, text));
+        }
+        await repository.CreateCheep(newCheep(testUser, "Hello World"));
+        var cheeps = await repository.ReadCheepDTO(2);
+        Assert.NotEmpty(cheeps);
+    }
+    
+    /*
+    Not yet tested functions from ICheepRepository:
+    
+    public Task<List<CheepDto>> ReadCheepDTOFromAuthor(int page, string authorName);
+    public Task<Author> GetAuthorByEmail(string email);
+    public Task<List<Cheep>> ReadCheepFromFollowed(string authorName);
+    public Task<List<CheepDto>> ReadCheepDTOFromFollowed(List<Cheep> cheeps);
+    */
 }
