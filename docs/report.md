@@ -126,7 +126,8 @@ Briefly describe and illustrate the flow of activities that happen from the new 
 -->
 The photo below shows our project board.
 
-(OBS! Insert photo of project board before submit)
+![project board](images/Screenshot%202024-12-19%20122208.png)
+
 
 There are two unresolved issues: both the playwright test and unit testing. These are unresolved because we wanted to add more tests to the ones we have. 
 
